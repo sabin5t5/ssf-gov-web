@@ -18,7 +18,35 @@ tl.from("nav", {
     x: 100,
     opacity: 0,
     ease: "power2.out",
+  })
+  .from(".card", {
+    duration: 1,
+    y: 200,
+    stagger: 0.2,
+    opacity: 0,
+    ease: "power2.out",
   });
+
+// scroll trigger
+
+// gsap.utils.toArray(".card").forEach((c) => {
+//   let tl1 = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: c,
+//       start: "-400 center",
+//       end: "bottom center",
+//       toggleActions: "play none none reverse",
+//       markers: true,
+//     },
+//   });
+
+//   tl1.from(c, {
+//     duration: 1,
+//     y: 200,
+//     opacity: 0,
+//     ease: "power2.out",
+//   });
+// });
 
 const lenis = new Lenis();
 

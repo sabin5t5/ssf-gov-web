@@ -4,102 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <nav class="nav-bar">
-      <div class="nav top-nav container mx-auto p-4 flex justify-between">
+    <nav class="top-nav z-[100] relative top-0">
+      <div class="container mx-auto p-4 flex justify-between">
         <img src="./assets/images/ssf-logo.png" alt="" class="h-14" />
         <img src="./assets/images/nepaliflag.gif" alt="" class="h-14" />
       </div>
-
-      <div class="nav bottom-nav bg-indigo-900 py-4">
-        <div class="container flex justify-between mx-auto">
-          <ul class="text-white m-0 p-0 flex gap-2 lg:flex">
-            <li class="">
-              <a
-                href=""
-                class="px-6 py-3 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20"
-                >गृहपृष्ण</a
-              >
-            </li>
-            <li class="hidden lg:block">
-              <a
-                href=""
-                class="px-6 py-3 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20"
-                >परिचय</a
-              >
-            </li>
-            <li class="hidden lg:block">
-              <a
-                href=""
-                class="px-6 py-3 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20"
-                >नागरिक वडापत्र</a
-              >
-            </li>
-            <li class="hidden lg:block">
-              <a
-                href=""
-                class="px-6 py-3 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20"
-                >गृहपृष्ण</a
-              >
-            </li>
-            <li class="hidden lg:block">
-              <a
-                href=""
-                class="px-6 py-3 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20"
-                >परिचय</a
-              >
-            </li>
-            <li class="hidden lg:block">
-              <a
-                href=""
-                class="px-6 py-3 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20"
-                >नागरिक वडापत्र</a
-              >
-            </li>
-          </ul>
-          <button class="ham-icon mr-2 md:mr-0 lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
+    </nav>
+    <nav class="bottom-nav bg-indigo-900 py-4 sticky top-0 z-[1]">
+      <div class="container flex justify-between mx-auto">
+        <ul class="text-white m-0 p-0 flex lg:flex">
+          <li class="">
+            <a
+              href=""
+              class="px-6 py-3 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20"
+              >गृहपृष्ण</a
             >
-              <path
-                d="M3 7H21"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              />
-              <path
-                d="M3 12H21"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              />
-              <path
-                d="M3 17H21"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              />
-            </svg>
-          </button>
-        </div>
+          </li>
+          <li class="hidden lg:block">
+            <a
+              href=""
+              class="px-6 py-3 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20"
+              >परिचय</a
+            >
+          </li>
+          <li class="hidden lg:block">
+            <a
+              href=""
+              class="px-6 py-3 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20"
+              >नागरिक वडापत्र</a
+            >
+          </li>
+          <li class="hidden lg:block">
+            <a
+              href=""
+              class="px-6 py-3 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20"
+              >गृहपृष्ण</a
+            >
+          </li>
+          <li class="hidden lg:block">
+            <a
+              href=""
+              class="px-6 py-3 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20"
+              >परिचय</a
+            >
+          </li>
+          <li class="hidden lg:block">
+            <a
+              href=""
+              class="px-6 py-3 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20"
+              >नागरिक वडापत्र</a
+            >
+          </li>
+        </ul>
+        <button class="ham-icon mr-2 md:mr-0 lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M3 7H21"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M3 12H21"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M3 17H21"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
       </div>
     </nav>
 
-    <section class="hero-section bg-blue-950 overflow-hidden relative">
+    <section class="hero-section bg-blue-950 overflow-hidden relative z-[0]">
       <div class="container mx-auto flex flex-wrap">
         <div
-          class="fx-left info-left w-100 lg:w-6/12 xl:w-5/12 flex h-100 p-4 py-24 lg:pt-24 xl:32 z-[1] bg-blue-950"
+          class="fx-left info-left w-100 lg:w-6/12 xl:w-5/12 flex p-4 py-24 lg:py-24 xl:py-40 z-[1] bg-blue-950"
         >
           <div class="w-100 flex flex-col w-100 gap-8 bg-blue-950">
             <h1
-              class="text-5xl font-extrabold leading-snug text-white whitespace-wrap"
+              class="text-5xl font-black leading-snug text-white whitespace-wrap"
             >
               सामाजिक सुरक्षा कोष आजैवाट सुरु गरौं
             </h1>
@@ -144,6 +144,160 @@
             alt=""
             class="fx-right w-full h-96 lg:h-full object-cover"
           />
+        </div>
+      </div>
+    </section>
+
+    <section class="portal-section bg-blue-50 mt-[-5rem]">
+      <div
+        class="container px-4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+      >
+        <div
+          class="card flex flex-col items-center rounded-md p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow"
+        >
+          <img src="./assets/images/edit-2.svg" alt="" class="mb-6 w-12" />
+          <h3 class="text-2xl text-blue-900 font-extrabold text-center mb-4">
+            नयाँ संस्था सूचिकरण
+          </h3>
+          <p class="text-slate-500 text-center mb-8">
+            नयाँ संस्था सूचिकरण, सुची, तथा विस्तृतमा जानकारी
+          </p>
+
+          <a
+            href=""
+            class="px-8 py-4 bg-blue-900 text-white flex items-center gap-2 rounded-md hover:bg-blue-700"
+            >प्रवेश गर्नुहोस
+            <img src="./assets/images/arrow-right.svg" alt="" />
+          </a>
+        </div>
+        <div
+          class="card flex flex-col items-center rounded-md p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow"
+        >
+          <img
+            src="./assets/images/note-favorite.svg"
+            alt=""
+            class="mb-6 w-12"
+          />
+          <h3 class="text-2xl text-blue-900 font-extrabold text-center mb-4">
+            रोजगारदाता पोर्टल
+          </h3>
+          <p class="text-slate-500 text-center mb-8">
+            रोजगारदाता Login, Register, सुची, विविध जानकारी तथा ड्यासवर्ड
+          </p>
+
+          <a
+            href=""
+            class="px-8 py-4 bg-blue-900 text-white flex items-center gap-2 rounded-md hover:bg-blue-700"
+            >प्रवेश गर्नुहोस
+            <img src="./assets/images/arrow-right.svg" alt="" />
+          </a>
+        </div>
+        <div
+          class="card flex flex-col items-center rounded-md p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow"
+        >
+          <img src="./assets/images/magic-star.svg" alt="" class="mb-6 w-12" />
+          <h3 class="text-2xl text-blue-900 font-extrabold text-center mb-4">
+            योगदानकर्ता पोर्टल
+          </h3>
+          <p class="text-slate-500 text-center mb-8">
+            योगदान कर्ताहरुको सुची, विविध जानकारी तथा ड्यासवर्ड
+          </p>
+
+          <a
+            href=""
+            class="px-8 py-4 bg-blue-900 text-white flex items-center gap-2 rounded-md hover:bg-blue-700"
+            >प्रवेश गर्नुहोस
+            <img src="./assets/images/arrow-right.svg" alt="" />
+          </a>
+        </div>
+        <div
+          class="card flex flex-col items-center rounded-md p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow"
+        >
+          <img src="./assets/images/hospital.svg" alt="" class="mb-6 w-12" />
+          <h3 class="text-2xl text-blue-900 font-extrabold text-center mb-4">
+            आवद्ध अस्पतालहरु
+          </h3>
+          <p class="text-slate-500 text-center mb-8">
+            आवद्ध अस्पतालहरु वाट मर्फत मात्र उपचार गर्नुपर्ने स्थानहरु
+          </p>
+
+          <a
+            href=""
+            class="px-8 py-4 bg-blue-900 text-white flex items-center gap-2 rounded-md hover:bg-blue-700"
+            >प्रवेश गर्नुहोस
+            <img src="./assets/images/arrow-right.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="notice-section bg-blue-50 py-32">
+      <div
+        class="container mx-auto px-4 grid grid-cols-10 gap-8 place-content-center"
+      >
+        <div class="filters col-span-1 flex flex-col items-start gap-4 mt-4">
+          <button class="text-blue-950 font-extrabold">सुचना</button>
+          <button class="text-slate-500">प्रेश विज्ञप्ती</button>
+        </div>
+        <div class="notice-pane bg-white col-span-7 p-8 rounded-md shadow-2xl">
+          <table class="w-full bg-white">
+            <thead class="text-blue-950 font-extrabold">
+              <tr class="border-b">
+                <th class="p-3 text-left">सि.नं.</th>
+                <th class="p-3 text-left">प्रकाशन मिति</th>
+                <th class="p-3 text-left">विषय</th>
+                <th class="p-3 text-left">पुरा विवरण</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b text-slate-600">
+                <td class="p-3">१</td>
+                <td class="p-3">२०८०।०८।२३</td>
+                <td class="p-3">
+                  न्युनतम आधारभूत पारिश्रमिक सम्बन्धी सूचना !!!
+                </td>
+                <td class="p-3">
+                  <button
+                    class="px-4 py-2 bg-blue-900 rounded-md text-white hover:bg-blue-700"
+                  >
+                    डाउनलोड
+                  </button>
+                </td>
+              </tr>
+              <tr class="border-b text-slate-600">
+                <td class="p-3">२</td>
+                <td class="p-3">२०८०।०८।२३</td>
+                <td class="p-3">
+                  न्युनतम आधारभूत पारिश्रमिक सम्बन्धी सूचना !!!
+                </td>
+                <td class="p-3">
+                  <button
+                    class="px-4 py-2 bg-blue-900 rounded-md text-white hover:bg-blue-700"
+                  >
+                    डाउनलोड
+                  </button>
+                </td>
+              </tr>
+              <tr class="text-slate-600">
+                <td class="p-3">३</td>
+                <td class="p-3">२०८०।०८।२३</td>
+                <td class="p-3">
+                  न्युनतम आधारभूत पारिश्रमिक सम्बन्धी सूचना !!!
+                </td>
+                <td class="p-3">
+                  <button
+                    class="px-4 py-2 bg-blue-900 rounded-md text-white hover:bg-blue-700"
+                  >
+                    डाउनलोड
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="p-8 col-span-2 rounded-md bg-white shadow-2xl">
+          <h1>Test</h1>
         </div>
       </div>
     </section>
