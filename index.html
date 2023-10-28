@@ -94,7 +94,7 @@
       </div>
 
       <div
-        class="ham-menu container bg-indigo-900 flex-col mx-auto px-5 py-16 absolute left-0 w-full hero-screen z-[0] hidden lg:hidden"
+        class="ham-menu container bg-indigo-900 flex-col mx-auto px-5 py-16 absolute left-0 right-0 w-full h-screen hero-screen z-[0] hidden lg:hidden"
       >
         <ul class="text-white p-0 flex flex-col gap-8">
           <li class="">
@@ -146,7 +146,7 @@
     <section
       class="hero-section text-sm bg-blue-950 overflow-hidden relative z-[0]"
     >
-      <div class="container mx-auto flex flex-wrap">
+      <div class="container mx-auto flex flex-wrap relative">
         <div
           class="fx-left info-left w-100 lg:w-6/12 xl:w-5/12 flex p-4 py-24 lg:py-24 xl:py-40 z-[1] bg-blue-950"
         >
@@ -185,28 +185,30 @@
           class="fx-left z-[2] hidden h-[100%] lg:block"
         />
 
-        <img
-          src="./assets/images/hero-asset-sm.svg"
-          alt=""
-          class="fx-left mt-[-1px] w-full block lg:hidden bottom-0 z-[101]"
-        />
+        <div class="divider w-full relative">
+          <img
+            src="./assets/images/hero-asset-sm.svg"
+            alt=""
+            class="fx-left absolute top-[-1px] w-full block lg:hidden bottom-0 z-[101]"
+          />
+        </div>
         <div
-          class="info-right bg-cover relative h-[24rem] lg:h-full w-full lg:w-8/12 overflow-visible flex lg:absolute block right-0 top-[-8rem] lg:top-[0] bottom-0 z-[0]"
+          class="info-right bg-cover relative h-[24rem] lg:h-full w-full lg:w-8/12 overflow-hidden flex lg:absolute block right-0 lg:top-[0] bottom-0 z-[0]"
         >
           <img
             src="https://assets.change.org/photos/8/lw/vo/VzlWvoifLnXkjZJ-1600x900-noPad.jpg?1623422759"
             alt=""
-            class="fx-right h-full lg:h-full object-cover"
+            class="fx-right h-full w-full lg:h-full object-cover"
           />
           <img
             src="https://machhapuchhremun.gov.np/sites/machhapuchhremun.gov.np/files/img/slider/Fishtail%20Mountain_1.JPG"
             alt=""
-            class="fx-right h-full lg:h-full object-cover"
+            class="fx-right h-full w-full lg:h-full object-cover"
           />
           <img
             src="https://www.ntnc.org.np/sites/default/files/styles/slider_1920x1024/public/default_images/default-cover_0.jpg?itok=14XRQdhm"
             alt=""
-            class="fx-right h-full lg:h-full object-cover"
+            class="fx-right h-full w-full lg:h-full object-cover"
           />
         </div>
       </div>
@@ -305,21 +307,20 @@
           class="tabbed-panel flex flex-col lg:flex-row gap-6 lg:gap-8 col-span-10 lg:col-span-6"
         >
           <div
-            class="filters flex justify-center lg:flex-col lg:items-start lg:justify-start gap-5 md:mt-4"
+            class="tab-btns flex justify-center lg:flex-col lg:items-start lg:justify-start gap-5 md:mt-4 text-slate-500"
           >
             <button
               class="tab-btn text-blue-950 font-extrabold whitespace-nowrap hover:text-blue-950 hover:font-extrabold"
-              id="tab-i"
+              id="tab-btn-i"
             >
               सुचना
             </button>
             <div
-              class="w-[1px] h-full lg:line lg:w-full lg:h-[1px] bg-blue-100"
-              id="tab-ii"
+              class="w-[1px] h-full lg:line lg:w-full lg:h-[1px] bg-blue-100 tab-underline"
             ></div>
             <button
-              class="tab-btn text-slate-500 whitespace-nowrap hover:text-blue-950 hover:font-extrabold"
-              id="tab-iii"
+              class="tab-btn whitespace-nowrap hover:text-blue-950 hover:font-extrabold"
+              id="tab-btn-ii"
             >
               प्रेश विज्ञप्ती
             </button>
@@ -327,12 +328,13 @@
               class="w-[1px] h-full lg:line lg:w-full lg:h-[1px] bg-blue-100"
             ></div>
             <button
-              class="tab-btn text-slate-500 whitespace-nowrap hover:text-blue-950 hover:font-extrabold"
+              class="tab-btn whitespace-nowrap hover:text-blue-950 hover:font-extrabold"
+              id="tab-btn-iii"
             >
               ऐन तथा नियमावली
             </button>
           </div>
-          <div class="tab-contents text-sm w-full">
+          <div class="tab-contents text-sm w-full flex">
             <div
               class="tab-content w-full p-6 bg-white w-full rounded-lg shadow-2xl"
               id="tab-content-i"

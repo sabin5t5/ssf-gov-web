@@ -92,13 +92,13 @@ let tx = gsap.fromTo(
   {
     clippath: "circle(0.5% at 100% 0)",
     display: "none",
-    duration: 0.5,
+    duration: 0,
   },
   {
     display: "flex",
-    clipPath: "circle(76.1% at 51% 43%)",
-    webkitClipPath: "circle(76.1% at 51% 43%)",
-    duration: 0.5,
+    clipPath: "circle(100% at 50% 50%)",
+    webkitClipPath: "circle(100% at 50% 50%)",
+    duration: 1.3,
     ease: "power2.out",
     paused: true,
   }
@@ -108,6 +108,45 @@ hamBtn.addEventListener("click", () => {
   const isHidden = tx.progress() === 0;
   isHidden ? tx.play() : tx.reverse();
 });
+
+function initializeTabPanel() {
+  const tabBtns = document.querySelectorAll(".tab-btn");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  // Add a click event listener to each tab button
+  tabBtns.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      // Remove active class from all tab buttons and contents
+      tabBtns.forEach((btn) => {
+        btn.classList.remove("text-blue-950", "font-extrabold");
+      });
+      tabContents.forEach((content) => {
+        content.style.display = "none";
+      });
+
+      // Add active class to the clicked tab button and show the corresponding content
+      btn.classList.add("text-blue-950", "font-extrabold");
+      tabContents[index].style.display = "block";
+
+      // animate tabContent using gsap
+      gsap.from(tabContents[index], {
+        display: "block",
+        duration: 0.5,
+        y: 200,
+        opacity: 0,
+        ease: "power2.out",
+      });
+    });
+
+    // Initialize with the first tab active
+    if (btn.id === "tab-btn-i") {
+      btn.click();
+    }
+  });
+}
+
+// Initialize the tab panel when the page loads
+window.addEventListener("load", initializeTabPanel);
 
 const lenis = new Lenis();
 
