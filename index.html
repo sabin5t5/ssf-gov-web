@@ -6,13 +6,20 @@
 
     <title>Document</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <nav class="top-nav z-[100] relative top-0">
       <div class="container mx-auto p-4 flex justify-between">
-        <img src="./assets/images/ssf-logo.png" alt="" class="h-14" />
-        <img src="./assets/images/nepaliflag.gif" alt="" class="h-14" />
+        <img src="./assets/images/ssf-logo.png" alt="" class="h-12" />
+        <img src="./assets/images/nepaliflag.gif" alt="" class="h-12" />
       </div>
     </nav>
     <nav
@@ -146,9 +153,9 @@
     <section
       class="hero-section text-sm bg-blue-950 overflow-hidden relative z-[0]"
     >
-      <div class="container mx-auto flex flex-wrap relative">
+      <div class="container mx-auto flex flex-wrap items-stretch relative">
         <div
-          class="fx-left info-left w-100 lg:w-6/12 xl:w-5/12 flex p-4 py-24 lg:py-24 xl:py-40 z-[1] bg-blue-950"
+          class="fx-left info-left w-100 lg:w-6/12 xl:w-5/12 flex p-4 py-16 lg:py-16 xl:py-24 z-[1] bg-blue-950 pt-16"
         >
           <div class="w-100 flex flex-col w-100 gap-8 bg-blue-950">
             <h1
@@ -182,7 +189,7 @@
         <img
           src="./assets/images/hero-asset.svg"
           alt=""
-          class="fx-left z-[2] hidden h-[100%] lg:block"
+          class="fx-left z-[2] hidden h-[10%] lg:block"
         />
 
         <div class="divider w-full relative">
@@ -215,91 +222,338 @@
     </section>
 
     <section
-      class="portal-section leading-relaxed text-sm bg-blue-50 py-4 lg:mt-[-5rem]"
+      class="faq-section flex place-content-center text-sm bg-blue-50 pt-16 lg:pt-0 lg:mt-[-4rem]"
     >
-      <div
-        class="container px-4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
-      >
+      <div class="container container px-4 mx-auto flex place-content-center">
         <div
-          class="card flex flex-col items-center rounded-lg p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow"
+          class="dropdown-wrapper flex flex-col gap-4 w-full lg:w-7/12 relative inline-block"
         >
-          <img src="./assets/images/edit-2.svg" alt="" class="mb-6 w-12" />
-          <h3 class="text-xl text-blue-900 font-extrabold text-center mb-4">
-            नयाँ संस्था सूचिकरण
-          </h3>
-          <p class="text-slate-500 text-center mb-8">
-            नयाँ संस्था सूचिकरण, सुची, तथा विस्तृतमा जानकारी
-          </p>
+          <div class="transition-all">
+            <button
+              type="button"
+              class="flex justify-between items-center w-full gap-x-1.5 rounded-md bg-white px-8 md:px-12 py-8 text-lg shadow-md hover:shadow-2xl transition-shadow border border-transparent hover:border-blue-800"
+              id="menu-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              <div class="info-left flex flex-col items-start gap-2">
+                <p class="text-blue-950 font-bold text-xs">जिज्ञाशाः</p>
+                <p class="text-slate-500 text-xl">हामिलाई सोधिने प्रश्नहरु !</p>
+              </div>
+              <svg
+                class="h-8 w-8 text-slate-500"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
 
-          <a
-            href=""
-            class="px-8 py-3 bg-blue-900 text-white flex items-center gap-2 rounded-lg hover:bg-blue-700"
-            >प्रवेश गर्नुहोस
-            <img src="./assets/images/arrow-right.svg" alt="" />
-          </a>
-        </div>
-        <div
-          class="card flex flex-col items-center rounded-lg p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow"
-        >
-          <img
-            src="./assets/images/note-favorite.svg"
-            alt=""
-            class="mb-6 w-12"
-          />
-          <h3 class="text-xl text-blue-900 font-extrabold text-center mb-4">
-            रोजगारदाता पोर्टल
-          </h3>
-          <p class="text-slate-500 text-center mb-8">
-            रोजगारदाता Login, Register, सुची, विविध जानकारी तथा ड्यासवर्ड
-          </p>
-
-          <a
-            href=""
-            class="px-8 py-3 bg-blue-900 text-white flex items-center gap-2 rounded-lg hover:bg-blue-700"
-            >प्रवेश गर्नुहोस
-            <img src="./assets/images/arrow-right.svg" alt="" />
-          </a>
-        </div>
-        <div
-          class="card flex flex-col items-center rounded-lg p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow"
-        >
-          <img src="./assets/images/magic-star.svg" alt="" class="mb-6 w-12" />
-          <h3 class="text-xl text-blue-900 font-extrabold text-center mb-4">
-            योगदानकर्ता पोर्टल
-          </h3>
-          <p class="text-slate-500 text-center mb-8">
-            योगदान कर्ताहरुको सुची, विविध जानकारी तथा ड्यासवर्ड
-          </p>
-
-          <a
-            href=""
-            class="px-8 py-3 bg-blue-900 text-white flex items-center gap-2 rounded-lg hover:bg-blue-700"
-            >प्रवेश गर्नुहोस
-            <img src="./assets/images/arrow-right.svg" alt="" />
-          </a>
-        </div>
-        <div
-          class="card flex flex-col items-center rounded-lg p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow"
-        >
-          <img src="./assets/images/hospital.svg" alt="" class="mb-6 w-12" />
-          <h3 class="text-xl text-blue-900 font-extrabold text-center mb-4">
-            आवद्ध अस्पतालहरु
-          </h3>
-          <p class="text-slate-500 text-center mb-8">
-            आवद्ध अस्पतालहरु वाट मर्फत मात्र उपचार गर्नुपर्ने स्थानहरु
-          </p>
-
-          <a
-            href=""
-            class="px-8 py-3 bg-blue-900 text-white flex items-center gap-2 rounded-lg hover:bg-blue-700"
-            >प्रवेश गर्नुहोस
-            <img src="./assets/images/arrow-right.svg" alt="" />
-          </a>
+          <div
+            class="dropdown-menu z-10 w-full rounded-md bg-white shadow-2xl ring-1 ring-black ring-opacity-5 border border-transparent focus:outline-none hover:border hover:border-blue-800"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="menu-button"
+            tabindex="-1"
+          >
+            <div class="py-1 transition-colors w-full" role="none">
+              <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+              <a
+                href="#"
+                class="text-slate-500 hover:text-blue-950 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4 text-sm"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+              >
+                सामाजिक सुरक्षा कोष भनेको के हो ?
+              </a>
+              <a
+                href="#"
+                class="text-slate-500 hover:text-blue-950 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4 text-sm"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                >सामाजिक सुरक्षा कोषलाई कसरि सुरुवात गर्ने ?</a
+              >
+              <a
+                href="#"
+                class="text-slate-500 hover:text-blue-950 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4 text-sm"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >सामाजिक सुरक्षा कोष कहिले देखी लागु हुन्छ ?</a
+              >
+              <a
+                href="#"
+                class="text-slate-500 hover:text-blue-950 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4 text-sm"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+              >
+                सामाजिक सुरक्षा कोष भनेको के हो ?
+              </a>
+              <a
+                href="#"
+                class="text-slate-500 hover:text-blue-950 hover:font-bold hover:bg-blue-50 block px-8 py-4 text-sm"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+                >सामाजिक सुरक्षा कोषलाई कसरि सुरुवात गर्ने ?</a
+              >
+              <a
+                href="#"
+                class="text-slate-500 hover:text-blue-950 hover:font-bold hover:bg-blue-50 block px-8 py-4 text-sm"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+                >सामाजिक सुरक्षा कोष कहिले देखी लागु हुन्छ ?</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="notice-section text-sm bg-blue-50 py-16 lg:py-24">
+    <section
+      class="portal-section leading-relaxed text-sm bg-blue-50 pt-16 lg:pt-24"
+    >
+      <div
+        class="container px-4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 transition-border duration-500 ease-in-out"
+      >
+        <div
+          class="card flex items-center gap-6 rounded-lg p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow border-t-8 border-blue-700 hover:border hover:border-blue-800 cursor-pointer"
+        >
+          <img src="./assets/images/edit-2.svg" alt="" class="w-8" />
+          <div class="info-right flex flex-col gap-2 justify-start">
+            <h3 class="text-xl text-blue-900 font-extrabold">
+              नयाँ संस्था सूचिकरणहरु
+            </h3>
+            <p class="text-slate-500">
+              नयाँ संस्था सूचिकरण, सुची, तथा विस्तृतमा जानकारी
+            </p>
+          </div>
+        </div>
+        <div
+          class="card flex items-center gap-6 rounded-lg p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow border-t-8 border-blue-700 hover:border hover:border-blue-800 cursor-pointer"
+        >
+          <img src="./assets/images/note-favorite.svg" alt="" class="w-8" />
+          <div class="info-right flex flex-col gap-2 justify-start">
+            <h3 class="text-xl text-blue-900 font-extrabold">
+              रोजगारदाता पोर्टल
+            </h3>
+            <p class="text-slate-500">
+              रोजगारदाता Login, Register, सुची, विविध जानकारी तथा ड्यासवर्ड
+            </p>
+          </div>
+        </div>
+        <div
+          class="card flex items-center gap-6 rounded-lg p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow border-t-8 border-blue-700 hover:border hover:border-blue-800 cursor-pointer"
+        >
+          <img src="./assets/images/magic-star.svg" alt="" class="w-8" />
+          <div class="info-right flex flex-col gap-2 justify-start">
+            <h3 class="text-xl text-blue-900 font-extrabold">
+              योगदानकर्ता पोर्टल
+            </h3>
+            <p class="text-slate-500">
+              योगदान कर्ताहरुको सुची, विविध जानकारी तथा ड्यासवर्ड
+            </p>
+          </div>
+        </div>
+        <div
+          class="card flex items-center gap-6 rounded-lg p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow border-t-8 border-blue-700 hover:border hover:border-blue-800 cursor-pointer"
+        >
+          <img src="./assets/images/hospital.svg" alt="" class="w-8" />
+          <div class="info-right flex flex-col gap-2 justify-start">
+            <h3 class="text-xl text-blue-900 font-extrabold">
+              आवद्ध अस्पतालहरु
+            </h3>
+            <p class="text-slate-500">
+              आवद्ध अस्पतालहरु वाट मर्फत मात्र उपचार गर्नुपर्ने स्थानहरु
+            </p>
+          </div>
+        </div>
+        <div
+          class="card flex items-center gap-6 rounded-lg p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow border-t-8 border-blue-700 hover:border hover:border-blue-800 cursor-pointer"
+        >
+          <img src="./assets/images/edit-2.svg" alt="" class="w-8" />
+          <div class="info-right flex flex-col gap-2 justify-start">
+            <h3 class="text-xl text-blue-900 font-extrabold">
+              नयाँ संस्था सूचिकरणहरु
+            </h3>
+            <p class="text-slate-500">
+              नयाँ संस्था सूचिकरण, सुची, तथा विस्तृतमा जानकारी
+            </p>
+          </div>
+        </div>
+        <div
+          class="card flex items-center gap-6 rounded-lg p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow border-t-8 border-blue-700 hover:border hover:border-blue-800 cursor-pointer"
+        >
+          <img src="./assets/images/edit-2.svg" alt="" class="w-8" />
+          <div class="info-right flex flex-col gap-2 justify-start">
+            <h3 class="text-xl text-blue-900 font-extrabold">
+              नयाँ संस्था सूचिकरणहरु
+            </h3>
+            <p class="text-slate-500">
+              नयाँ संस्था सूचिकरण, सुची, तथा विस्तृतमा जानकारी
+            </p>
+          </div>
+        </div>
+        <div
+          class="card flex items-center gap-6 rounded-lg p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow border-t-8 border-blue-700 hover:border hover:border-blue-800 cursor-pointer"
+        >
+          <img src="./assets/images/edit-2.svg" alt="" class="w-8" />
+          <div class="info-right flex flex-col gap-2 justify-start">
+            <h3 class="text-xl text-blue-900 font-extrabold">
+              नयाँ संस्था सूचिकरणहरु
+            </h3>
+            <p class="text-slate-500">
+              नयाँ संस्था सूचिकरण, सुची, तथा विस्तृतमा जानकारी
+            </p>
+          </div>
+        </div>
+        <div
+          class="card flex items-center gap-6 rounded-lg p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow border-t-8 border-blue-700 hover:border hover:border-blue-800 cursor-pointer"
+        >
+          <img src="./assets/images/edit-2.svg" alt="" class="w-8" />
+          <div class="info-right flex flex-col gap-2 justify-start">
+            <h3 class="text-xl text-blue-900 font-extrabold">
+              नयाँ संस्था सूचिकरणहरु
+            </h3>
+            <p class="text-slate-500">
+              नयाँ संस्था सूचिकरण, सुची, तथा विस्तृतमा जानकारी
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fact-section bg-blue-50 py-24 text-sm">
+      <div class="container mx-auto px-4 rounded-lg overflow-hidden">
+        <!-- <div class="fact-header py-16 bg-blue-500 text-center">
+          <p class="text-blue-100">सामाजिक सुरक्षा कोषका केही</p>
+          <h1 class="text-5xl font-extrabold text-white">तथ्याङ्कहरु</h1>
+        </div> -->
+        <div
+          class="fact-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-white"
+        >
+          <div
+            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-800 hover:bg-blue-800"
+          >
+            <div
+              class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+            >
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <div class="fact-info text-center">
+              <h3 class="text-3xl font-extrabold">१००००००</h3>
+              <p class="text-blue-200">जनसंख्या</p>
+            </div>
+          </div>
+          <div
+            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-800 hover:bg-blue-800"
+          >
+            <div
+              class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+            >
+              <i class="fa-solid fa-house-chimney-user"></i>
+            </div>
+            <div class="fact-info text-center">
+              <h3 class="text-3xl font-extrabold">१००००००</h3>
+              <p class="text-blue-200">जनसंख्या</p>
+            </div>
+          </div>
+
+          <div
+            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-800 hover:bg-blue-800"
+          >
+            <div
+              class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+            >
+              <i class="fa-solid fa-hospital-user"></i>
+            </div>
+            <div class="fact-info text-center">
+              <h3 class="text-3xl font-extrabold">१००००००</h3>
+              <p class="text-blue-200">जनसंख्या</p>
+            </div>
+          </div>
+          <div
+            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-800 hover:bg-blue-800"
+          >
+            <div
+              class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+            >
+              <i class="fa-solid fa-head-side-virus"></i>
+            </div>
+            <div class="fact-info text-center">
+              <h3 class="text-3xl font-extrabold">१००००००</h3>
+              <p class="text-blue-200">जनसंख्या</p>
+            </div>
+          </div>
+
+          <div
+            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-800 hover:bg-blue-800"
+          >
+            <div
+              class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+            >
+              <i class="fa-solid fa-face-meh"></i>
+            </div>
+            <div class="fact-info text-center">
+              <h3 class="text-3xl font-extrabold">१००००००</h3>
+              <p class="text-blue-200">जनसंख्या</p>
+            </div>
+          </div>
+          <div
+            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-800 hover:bg-blue-800"
+          >
+            <div
+              class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+            >
+              <i class="fa-solid fa-clipboard-user"></i>
+            </div>
+            <div class="fact-info text-center">
+              <h3 class="text-3xl font-extrabold">१००००००</h3>
+              <p class="text-blue-200">जनसंख्या</p>
+            </div>
+          </div>
+
+          <div
+            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-800 hover:bg-blue-800"
+          >
+            <div
+              class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+            >
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <div class="fact-info text-center">
+              <h3 class="text-3xl font-extrabold">१००००००</h3>
+              <p class="text-blue-200">जनसंख्या</p>
+            </div>
+          </div>
+          <div
+            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-800 hover:bg-blue-800"
+          >
+            <div
+              class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+            >
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <div class="fact-info text-center">
+              <h3 class="text-3xl font-extrabold">१००००००</h3>
+              <p class="text-blue-200">जनसंख्या</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="notice-section text-sm bg-blue-50 py-16 lg:py-24">
       <div
         class="container mx-auto px-4 grid grid-cols-10 gap-8 place-content-center"
       >
@@ -482,7 +736,7 @@
                     <th class="p-3 text-left whitespace-nowrap">
                       प्रकाशन मिति
                     </th>
-                    <th class="p-3 text-left">विषय</th>
+                    <th class="p-3 text-left">शिर्षक</th>
                     <th class="p-3 text-left">पुरा विवरण</th>
                   </tr>
                 </thead>
@@ -527,7 +781,7 @@
           <h1>Test</h1>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.25/bundled/lenis.min.js"></script>

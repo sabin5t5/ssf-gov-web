@@ -148,6 +148,42 @@ function initializeTabPanel() {
 // Initialize the tab panel when the page loads
 window.addEventListener("load", initializeTabPanel);
 
+const button = document.getElementById("menu-button");
+const menu = document.querySelector(".dropdown-menu");
+
+// Initialize GSAP timeline
+const timeline = gsap.timeline({
+  paused: true,
+});
+
+timeline.fromTo(
+  menu,
+  {
+    y: -20,
+    clipPath: "circle(0% at 50% 0)",
+    display: "none",
+  },
+  {
+    display: "flex",
+    y: 0,
+    clipPath: "circle(100% at 50% 50%)",
+    webkitClipPath: "circle(100% at 50% 50%)",
+    duration: 0.8,
+    ease: "power2.out",
+  }
+);
+
+button.addEventListener("click", () => {
+  if (menu.style.display === "none") {
+    // If the menu is hidden, play the animation forward and reveal it
+    menu.style.display = "flex";
+    timeline.play();
+  } else {
+    // If the menu is visible, reverse the animation and hide it
+    timeline.reverse();
+  }
+});
+
 const lenis = new Lenis();
 
 lenis.on("scroll", (e) => {
