@@ -435,15 +435,19 @@
 
     <section class="fact-section bg-blue-50 py-24 text-sm">
       <div class="container mx-auto px-4 rounded-lg overflow-hidden">
-        <!-- <div class="fact-header py-16 bg-blue-500 text-center">
+        <!-- <div class="grid-parent grid grid-cols-1 md:grid-cols-2">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div> -->
+        <div class="fact-header py-8 bg-blue-500 text-center">
           <p class="text-blue-100">सामाजिक सुरक्षा कोषका केही</p>
           <h1 class="text-5xl font-extrabold text-white">तथ्याङ्कहरु</h1>
-        </div> -->
+        </div>
         <div
-          class="fact-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-white"
+          class="fact-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-white rounded overflow-hidden"
         >
           <div
-            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-800 hover:bg-blue-800"
+            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
           >
             <div
               class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
@@ -456,7 +460,7 @@
             </div>
           </div>
           <div
-            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-800 hover:bg-blue-800"
+            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
           >
             <div
               class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
@@ -470,7 +474,7 @@
           </div>
 
           <div
-            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-800 hover:bg-blue-800"
+            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
           >
             <div
               class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
@@ -483,7 +487,7 @@
             </div>
           </div>
           <div
-            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-800 hover:bg-blue-800"
+            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
           >
             <div
               class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
@@ -497,7 +501,7 @@
           </div>
 
           <div
-            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-800 hover:bg-blue-800"
+            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
           >
             <div
               class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
@@ -510,7 +514,7 @@
             </div>
           </div>
           <div
-            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-800 hover:bg-blue-800"
+            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
           >
             <div
               class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
@@ -524,7 +528,7 @@
           </div>
 
           <div
-            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-800 hover:bg-blue-800"
+            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
           >
             <div
               class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
@@ -537,7 +541,7 @@
             </div>
           </div>
           <div
-            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-800 hover:bg-blue-800"
+            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
           >
             <div
               class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
@@ -548,6 +552,190 @@
               <h3 class="text-3xl font-extrabold">१००००००</h3>
               <p class="text-blue-200">जनसंख्या</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services bg-blue-50 pb-24 text-sm">
+      <div class="container mx-auto px-4">
+        <div
+          class="flex items-center justify-center w-full h-full py-24 sm:py-8"
+        >
+          <div class="w-full relative flex items-center justify-center">
+            <button
+              aria-label="slide backward"
+              class="absolute z-30 left-0 ml-[-16px] cursor-pointer h-8 w-8 flex justify-center items-center rounded-full bg-white hover:shadow-2xl"
+              id="prev"
+            >
+              <svg
+                class="dark:text-blue-800"
+                width="8"
+                height="14"
+                viewBox="0 0 8 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 1L1 7L7 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div
+              class="w-full h-full mx-auto overflow-visible overflow-x-scroll"
+            >
+              <div
+                id="slider"
+                class="h-full flex gap-8 items-center justify-start transition ease-out duration-700"
+              >
+                <div
+                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 relative w-full lg:w-3/12"
+                >
+                  <img
+                    src="https://ssf.gov.np/images/services/16413089529385_scheme-1.jpg"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-full"
+                  />
+                  <div
+                    class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                  >
+                    <h2
+                      class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                    >
+                      हेलो वर्ल्ण
+                    </h2>
+
+                    <p>Minimal Interior</p>
+                  </div>
+                </div>
+                <div
+                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 relative w-full lg:w-3/12"
+                >
+                  <img
+                    src="https://ssf.gov.np/images/services/16395362226463_social%20security%20fundss-03.jpg"
+                    alt="sitting area"
+                    class="object-cover object-center w-full"
+                  />
+                  <div
+                    class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                  >
+                    <h2
+                      class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                    >
+                      हेलो वर्ल्ण
+                    </h2>
+
+                    <p>Minimal Interior</p>
+                  </div>
+                </div>
+                <div
+                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 relative w-full lg:w-3/12"
+                >
+                  <img
+                    src="https://ssf.gov.np/images/services/16395362387114_social%20security%20fundss-04.jpg"
+                    alt="sitting area"
+                    class="object-cover object-center w-full"
+                  />
+                  <div
+                    class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                  >
+                    <h2
+                      class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                    >
+                      हेलो वर्ल्ण
+                    </h2>
+
+                    <p>Minimal Interior</p>
+                  </div>
+                </div>
+                <div
+                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 relative w-full lg:w-3/12"
+                >
+                  <img
+                    src="https://ssf.gov.np/images/services/16395362387114_social%20security%20fundss-04.jpg"
+                    alt="sitting area"
+                    class="object-cover object-center w-full"
+                  />
+                  <div
+                    class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                  >
+                    <h2
+                      class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                    >
+                      हेलो वर्ल्ण
+                    </h2>
+
+                    <p>Minimal Interior</p>
+                  </div>
+                </div>
+                <div
+                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 relative w-full lg:w-3/12"
+                >
+                  <img
+                    src="https://ssf.gov.np/images/services/16395362006951_social%20security%20fundss-01.jpg"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-full"
+                  />
+                  <div
+                    class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                  >
+                    <h2
+                      class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                    >
+                      हेलो वर्ल्ण
+                    </h2>
+
+                    <p>Minimal Interior</p>
+                  </div>
+                </div>
+                <div
+                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 relative w-full lg:w-3/12"
+                >
+                  <img
+                    src="https://ssf.gov.np/images/services/16395362006951_social%20security%20fundss-01.jpg"
+                    alt="sitting area"
+                    class="object-cover object-center w-full"
+                  />
+                  <div
+                    class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                  >
+                    <h2
+                      class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                    >
+                      हेलो वर्ल्ण
+                    </h2>
+
+                    <p>Minimal Interior</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              aria-label="slide forward"
+              class="absolute z-30 right-0 mr-[-16px] cursor-pointer h-8 w-8 flex justify-center items-center rounded-full bg-white"
+              id="next"
+            >
+              <svg
+                class="dark:text-blue-900"
+                width="8"
+                height="14"
+                viewBox="0 0 8 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1L7 7L1 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
