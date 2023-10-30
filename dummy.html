@@ -1,197 +1,201 @@
-<section class="portal-section leading-relaxed text-sm bg-blue-50 py-4">
-  <div
-    class="container px-4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
-  >
-    <div
-      class="card flex flex-col items-center rounded-lg p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow"
-    >
-      <img src="./assets/images/edit-2.svg" alt="" class="mb-4 w-8" />
-      <h3 class="text-md text-blue-900 font-extrabold text-center mb-4">
-        नयाँ संस्था सूचिकरण
-      </h3>
-      <p class="text-slate-500 text-center mb-8">
-        नयाँ संस्था सूचिकरण, सुची, तथा विस्तृतमा जानकारी
-      </p>
-
-      <a
-        href=""
-        class="px-8 py-3 bg-blue-900 text-white flex items-center gap-2 rounded-lg hover:bg-blue-700"
-        >प्रवेश गर्नुहोस
-        <img src="./assets/images/arrow-right.svg" alt="" />
-      </a>
+<section class="services bg-blue-50 pb-24 text-sm">
+  <div class="container mx-auto px-4">
+    <div class="services-header flex flex-col items-center gap-4">
+      <div
+        class="line h-[1px] w-24 bg-blue-500 flex items-center justify-center rounded-full"
+      >
+        <p class="text-blue-500 p-1 bg-blue-50">हाम्रा</p>
+      </div>
+      <h1 class="text-5xl font-extrabold text-blue-900">सेवाहरु</h1>
     </div>
-    <div
-      class="card flex flex-col items-center rounded-lg p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow"
-    >
-      <img src="./assets/images/note-favorite.svg" alt="" class="mb-4 w-8" />
-      <h3 class="text-md text-blue-900 font-extrabold text-center mb-4">
-        रोजगारदाता पोर्टल
-      </h3>
-      <p class="text-slate-500 text-center mb-8">
-        रोजगारदाता Login, Register, सुची, विविध जानकारी तथा ड्यासवर्ड
-      </p>
+    <div class="flex items-center justify-center w-full h-full py-24 sm:py-8">
+      <div class="w-full relative flex items-center justify-center">
+        <button
+          aria-label="slide backward"
+          class="absolute z-30 left-0 ml-[-12px] cursor-pointer h-10 w-10 flex justify-center items-center rounded-full bg-white hover:shadow-2xl"
+          id="prev"
+        >
+          <svg
+            class="dark:text-blue-800"
+            width="8"
+            height="14"
+            viewBox="0 0 8 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7 1L1 7L7 13"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <div class="w-full h-full mx-auto overflow-hidden">
+          <div
+            id="slider"
+            class="h-full flex items-center justify-start transition ease-out duration-700"
+          >
+            <div
+              class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full md:w-6/12 lg:w-3/12 p-4"
+            >
+              <div
+                class="card-contents rounded-md overflow-hidden shadow-lg relative"
+              >
+                <div
+                  class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                >
+                  <h2
+                    class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                  >
+                    हेलो वर्ल्ण
+                  </h2>
 
-      <a
-        href=""
-        class="px-8 py-3 bg-blue-900 text-white flex items-center gap-2 rounded-lg hover:bg-blue-700"
-        >प्रवेश गर्नुहोस
-        <img src="./assets/images/arrow-right.svg" alt="" />
-      </a>
-    </div>
-    <div
-      class="card flex flex-col items-center rounded-lg p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow"
-    >
-      <img src="./assets/images/magic-star.svg" alt="" class="mb-4 w-8" />
-      <h3 class="text-md text-blue-900 font-extrabold text-center mb-4">
-        योगदानकर्ता पोर्टल
-      </h3>
-      <p class="text-slate-500 text-center mb-8">
-        योगदान कर्ताहरुको सुची, विविध जानकारी तथा ड्यासवर्ड
-      </p>
+                  <p>Minimal Interior</p>
+                </div>
 
-      <a
-        href=""
-        class="px-8 py-3 bg-blue-900 text-white flex items-center gap-2 rounded-lg hover:bg-blue-700"
-        >प्रवेश गर्नुहोस
-        <img src="./assets/images/arrow-right.svg" alt="" />
-      </a>
-    </div>
-    <div
-      class="card flex flex-col items-center rounded-lg p-8 bg-white shadow-sm hover:shadow-2xl transition-shadow"
-    >
-      <img src="./assets/images/hospital.svg" alt="" class="mb-6 w-8" />
-      <h3 class="text-md text-blue-900 font-extrabold text-center mb-4">
-        आवद्ध अस्पतालहरु
-      </h3>
-      <p class="text-slate-500 text-center mb-8">
-        आवद्ध अस्पतालहरु वाट मर्फत मात्र उपचार गर्नुपर्ने स्थानहरु
-      </p>
+                <div class="line h-4 w-full bg-blue-100"></div>
 
-      <a
-        href=""
-        class="px-8 py-3 bg-blue-900 text-white flex items-center gap-2 rounded-lg hover:bg-blue-700"
-        >प्रवेश गर्नुहोस
-        <img src="./assets/images/arrow-right.svg" alt="" />
-      </a>
-    </div>
-  </div>
-</section>
+                <img
+                  src="https://ssf.gov.np/images/services/16413089529385_scheme-1.jpg"
+                  alt=""
+                  class="object-cover object-center w-full"
+                />
+              </div>
+            </div>
+            <div
+              class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full md:w-6/12 lg:w-3/12 p-4"
+            >
+              <div
+                class="card-contents rounded-md overflow-hidden shadow-lg relative"
+              >
+                <div
+                  class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                >
+                  <h2
+                    class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                  >
+                    हेलो वर्ल्ण
+                  </h2>
 
-<section class="fact-section bg-blue-50 py-24 text-sm">
-  <div class="container mx-auto px-4 rounded-lg overflow-hidden">
-    <div class="fact-header py-16 bg-blue-500 text-center">
-      <p class="text-blue-100">सामाजिक सुरक्षा कोषका केही</p>
-      <h1 class="text-5xl font-extrabold text-white">तथ्याङ्कहरु</h1>
-    </div>
-    <div
-      class="fact-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-white rounded overflow-hidden"
-    >
-      <div
-        class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
-      >
-        <div
-          class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
-        >
-          <i class="fa-solid fa-people-group"></i>
-        </div>
-        <div class="fact-info text-center">
-          <h3 class="text-3xl font-extrabold">१००००००</h3>
-          <p class="text-blue-200">जनसंख्या</p>
-        </div>
-      </div>
-      <div
-        class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
-      >
-        <div
-          class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
-        >
-          <i class="fa-solid fa-house-chimney-user"></i>
-        </div>
-        <div class="fact-info text-center">
-          <h3 class="text-3xl font-extrabold">१००००००</h3>
-          <p class="text-blue-200">जनसंख्या</p>
-        </div>
-      </div>
+                  <p>Minimal Interior</p>
+                </div>
 
-      <div
-        class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
-      >
-        <div
-          class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
-        >
-          <i class="fa-solid fa-hospital-user"></i>
-        </div>
-        <div class="fact-info text-center">
-          <h3 class="text-3xl font-extrabold">१००००००</h3>
-          <p class="text-blue-200">जनसंख्या</p>
-        </div>
-      </div>
-      <div
-        class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
-      >
-        <div
-          class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
-        >
-          <i class="fa-solid fa-head-side-virus"></i>
-        </div>
-        <div class="fact-info text-center">
-          <h3 class="text-3xl font-extrabold">१००००००</h3>
-          <p class="text-blue-200">जनसंख्या</p>
-        </div>
-      </div>
+                <div class="line h-4 w-full bg-blue-100"></div>
 
-      <div
-        class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
-      >
-        <div
-          class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
-        >
-          <i class="fa-solid fa-face-meh"></i>
-        </div>
-        <div class="fact-info text-center">
-          <h3 class="text-3xl font-extrabold">१००००००</h3>
-          <p class="text-blue-200">जनसंख्या</p>
-        </div>
-      </div>
-      <div
-        class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
-      >
-        <div
-          class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
-        >
-          <i class="fa-solid fa-clipboard-user"></i>
-        </div>
-        <div class="fact-info text-center">
-          <h3 class="text-3xl font-extrabold">१००००००</h3>
-          <p class="text-blue-200">जनसंख्या</p>
-        </div>
-      </div>
+                <img
+                  src="https://ssf.gov.np/images/services/16413089529385_scheme-1.jpg"
+                  alt=""
+                  class="object-cover object-center w-full"
+                />
+              </div>
+            </div>
+            <div
+              class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full md:w-6/12 lg:w-3/12 p-4"
+            >
+              <div
+                class="card-contents rounded-md overflow-hidden shadow-lg relative"
+              >
+                <div
+                  class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                >
+                  <h2
+                    class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                  >
+                    हेलो वर्ल्ण
+                  </h2>
 
-      <div
-        class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
-      >
-        <div
-          class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+                  <p>Minimal Interior</p>
+                </div>
+
+                <div class="line h-4 w-full bg-blue-100"></div>
+
+                <img
+                  src="https://ssf.gov.np/images/services/16413089529385_scheme-1.jpg"
+                  alt=""
+                  class="object-cover object-center w-full"
+                />
+              </div>
+            </div>
+            <div
+              class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full md:w-6/12 lg:w-3/12 p-4"
+            >
+              <div
+                class="card-contents rounded-md overflow-hidden shadow-lg relative"
+              >
+                <div
+                  class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                >
+                  <h2
+                    class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                  >
+                    हेलो वर्ल्ण
+                  </h2>
+
+                  <p>Minimal Interior</p>
+                </div>
+
+                <div class="line h-4 w-full bg-blue-100"></div>
+
+                <img
+                  src="https://ssf.gov.np/images/services/16413089529385_scheme-1.jpg"
+                  alt=""
+                  class="object-cover object-center w-full"
+                />
+              </div>
+            </div>
+            <div
+              class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full md:w-6/12 lg:w-3/12 p-4"
+            >
+              <div
+                class="card-contents rounded-md overflow-hidden shadow-lg relative"
+              >
+                <div
+                  class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                >
+                  <h2
+                    class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                  >
+                    हेलो वर्ल्ण
+                  </h2>
+
+                  <p>Minimal Interior</p>
+                </div>
+
+                <div class="line h-4 w-full bg-blue-100"></div>
+
+                <img
+                  src="https://ssf.gov.np/images/services/16413089529385_scheme-1.jpg"
+                  alt=""
+                  class="object-cover object-center w-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          aria-label="slide forward"
+          class="absolute z-30 right-0 mr-[-12px] cursor-pointer h-10 w-10 flex justify-center items-center rounded-full bg-white"
+          id="next"
         >
-          <i class="fa-solid fa-people-group"></i>
-        </div>
-        <div class="fact-info text-center">
-          <h3 class="text-3xl font-extrabold">१००००००</h3>
-          <p class="text-blue-200">जनसंख्या</p>
-        </div>
-      </div>
-      <div
-        class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
-      >
-        <div
-          class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
-        >
-          <i class="fa-solid fa-people-group"></i>
-        </div>
-        <div class="fact-info text-center">
-          <h3 class="text-3xl font-extrabold">१००००००</h3>
-          <p class="text-blue-200">जनसंख्या</p>
-        </div>
+          <svg
+            class="dark:text-blue-900"
+            width="8"
+            height="14"
+            viewBox="0 0 8 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1L7 7L1 13"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   </div>

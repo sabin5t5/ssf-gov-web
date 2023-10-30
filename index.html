@@ -13,6 +13,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -23,7 +26,7 @@
       </div>
     </nav>
     <nav
-      class="bottom-nav bg-indigo-900 py-4 text-sm sticky top-0 z-[1] relative"
+      class="bottom-nav bg-indigo-900 py-4 text-sm sticky top-0 z-20 relative"
     >
       <div class="container flex justify-between mx-auto">
         <ul class="text-white m-0 p-0 flex lg:flex">
@@ -237,26 +240,29 @@
               aria-haspopup="true"
             >
               <div class="info-left flex flex-col items-start gap-2">
-                <p class="text-blue-950 font-bold text-xs">जिज्ञाशाः</p>
+                <p class="text-blue-900 font-bold text-xs">जिज्ञाशाः</p>
                 <p class="text-slate-500 text-xl">हामिलाई सोधिने प्रश्नहरु !</p>
               </div>
-              <svg
-                class="h-8 w-8 text-slate-500"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                  clip-rule="evenodd"
-                />
-              </svg>
+
+              <div class="drop-arrow">
+                <svg
+                  class="h-8 w-8 text-slate-500"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
             </button>
           </div>
 
           <div
-            class="dropdown-menu z-10 w-full rounded-md bg-white shadow-2xl ring-1 ring-black ring-opacity-5 border border-transparent focus:outline-none hover:border hover:border-blue-800"
+            class="dropdown-menu z-1 w-full rounded-md bg-white shadow-2xl ring-1 ring-black ring-opacity-5 border border-transparent focus:outline-none hover:border hover:border-blue-800"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="menu-button"
@@ -266,7 +272,7 @@
               <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
               <a
                 href="#"
-                class="text-slate-500 hover:text-blue-950 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4 text-sm"
+                class="text-slate-500 hover:text-blue-900 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4 text-sm"
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-0"
@@ -275,7 +281,7 @@
               </a>
               <a
                 href="#"
-                class="text-slate-500 hover:text-blue-950 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4 text-sm"
+                class="text-slate-500 hover:text-blue-900 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4 text-sm"
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-1"
@@ -283,7 +289,7 @@
               >
               <a
                 href="#"
-                class="text-slate-500 hover:text-blue-950 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4 text-sm"
+                class="text-slate-500 hover:text-blue-900 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4 text-sm"
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-2"
@@ -291,7 +297,7 @@
               >
               <a
                 href="#"
-                class="text-slate-500 hover:text-blue-950 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4 text-sm"
+                class="text-slate-500 hover:text-blue-900 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4 text-sm"
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-0"
@@ -300,7 +306,7 @@
               </a>
               <a
                 href="#"
-                class="text-slate-500 hover:text-blue-950 hover:font-bold hover:bg-blue-50 block px-8 py-4 text-sm"
+                class="text-slate-500 hover:text-blue-900 hover:font-bold hover:bg-blue-50 block px-8 py-4 text-sm"
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-1"
@@ -308,7 +314,7 @@
               >
               <a
                 href="#"
-                class="text-slate-500 hover:text-blue-950 hover:font-bold hover:bg-blue-50 block px-8 py-4 text-sm"
+                class="text-slate-500 hover:text-blue-900 hover:font-bold hover:bg-blue-50 block px-8 py-4 text-sm"
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-2"
@@ -434,123 +440,153 @@
     </section>
 
     <section class="fact-section bg-blue-50 py-24 text-sm">
-      <div class="container mx-auto px-4 rounded-lg overflow-hidden">
-        <!-- <div class="grid-parent grid grid-cols-1 md:grid-cols-2">
-          <div class="left"></div>
-          <div class="right"></div>
-        </div> -->
-        <div class="fact-header py-8 bg-blue-500 text-center">
-          <p class="text-blue-100">सामाजिक सुरक्षा कोषका केही</p>
-          <h1 class="text-5xl font-extrabold text-white">तथ्याङ्कहरु</h1>
-        </div>
-        <div
-          class="fact-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-white rounded overflow-hidden"
-        >
+      <div class="container mx-auto px-4">
+        <div class="facts rounded overflow-hidden">
           <div
-            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
+            class="fact-header py-8 bg-blue-500 text-center flex flex-col items-center gap-4"
           >
             <div
-              class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+              class="line h-[1px] w-48 bg-white flex items-center justify-center rounded-full"
             >
-              <i class="fa-solid fa-people-group"></i>
+              <p class="text-white p-1 bg-blue-500">
+                सामाजिक सुरक्षा कोषका केही
+              </p>
             </div>
-            <div class="fact-info text-center">
-              <h3 class="text-3xl font-extrabold">१००००००</h3>
-              <p class="text-blue-200">जनसंख्या</p>
-            </div>
+            <h1 class="text-5xl font-extrabold text-white">तथ्याङ्कहरु</h1>
           </div>
           <div
-            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
+            class="fact-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-white overflow-hidden"
           >
             <div
-              class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+              class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
             >
-              <i class="fa-solid fa-house-chimney-user"></i>
+              <div
+                class="icon w-16 h-16 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-3xl"
+              >
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <div class="fact-info text-center flex flex-col gap-3 leading-6">
+                <h3 class="text-4xl font-extrabold">१००००००</h3>
+                <p class="text-blue-200">
+                  जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
+                  समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
+                </p>
+              </div>
             </div>
-            <div class="fact-info text-center">
-              <h3 class="text-3xl font-extrabold">१००००००</h3>
-              <p class="text-blue-200">जनसंख्या</p>
+            <div
+              class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
+            >
+              <div
+                class="icon w-16 h-16 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-3xl"
+              >
+                <i class="fa-solid fa-house-chimney-user"></i>
+              </div>
+              <div class="fact-info text-center flex flex-col gap-3 leading-6">
+                <h3 class="text-4xl font-extrabold">१००००००</h3>
+                <p class="text-blue-200">
+                  जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
+                  समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div
-            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
-          >
             <div
-              class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+              class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
             >
-              <i class="fa-solid fa-hospital-user"></i>
+              <div
+                class="icon w-16 h-16 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-3xl"
+              >
+                <i class="fa-solid fa-hospital-user"></i>
+              </div>
+              <div class="fact-info text-center flex flex-col gap-3 leading-6">
+                <h3 class="text-4xl font-extrabold">१००००००</h3>
+                <p class="text-blue-200">
+                  जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
+                  समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
+                </p>
+              </div>
             </div>
-            <div class="fact-info text-center">
-              <h3 class="text-3xl font-extrabold">१००००००</h3>
-              <p class="text-blue-200">जनसंख्या</p>
-            </div>
-          </div>
-          <div
-            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
-          >
             <div
-              class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+              class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
             >
-              <i class="fa-solid fa-head-side-virus"></i>
+              <div
+                class="icon w-16 h-16 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-3xl"
+              >
+                <i class="fa-solid fa-head-side-virus"></i>
+              </div>
+              <div class="fact-info text-center flex flex-col gap-3 leading-6">
+                <h3 class="text-4xl font-extrabold">१००००००</h3>
+                <p class="text-blue-200">
+                  जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
+                  समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
+                </p>
+              </div>
             </div>
-            <div class="fact-info text-center">
-              <h3 class="text-3xl font-extrabold">१००००००</h3>
-              <p class="text-blue-200">जनसंख्या</p>
-            </div>
-          </div>
 
-          <div
-            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
-          >
             <div
-              class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+              class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
             >
-              <i class="fa-solid fa-face-meh"></i>
+              <div
+                class="icon w-16 h-16 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-3xl"
+              >
+                <i class="fa-solid fa-face-meh"></i>
+              </div>
+              <div class="fact-info text-center flex flex-col gap-3 leading-6">
+                <h3 class="text-4xl font-extrabold">१००००००</h3>
+                <p class="text-blue-200">
+                  जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
+                  समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
+                </p>
+              </div>
             </div>
-            <div class="fact-info text-center">
-              <h3 class="text-3xl font-extrabold">१००००००</h3>
-              <p class="text-blue-200">जनसंख्या</p>
-            </div>
-          </div>
-          <div
-            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
-          >
             <div
-              class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+              class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
             >
-              <i class="fa-solid fa-clipboard-user"></i>
+              <div
+                class="icon w-16 h-16 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-3xl"
+              >
+                <i class="fa-solid fa-clipboard-user"></i>
+              </div>
+              <div class="fact-info text-center flex flex-col gap-3 leading-6">
+                <h3 class="text-4xl font-extrabold">१००००००</h3>
+                <p class="text-blue-200">
+                  जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
+                  समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
+                </p>
+              </div>
             </div>
-            <div class="fact-info text-center">
-              <h3 class="text-3xl font-extrabold">१००००००</h3>
-              <p class="text-blue-200">जनसंख्या</p>
-            </div>
-          </div>
 
-          <div
-            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
-          >
             <div
-              class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+              class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
             >
-              <i class="fa-solid fa-people-group"></i>
+              <div
+                class="icon w-16 h-16 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-3xl"
+              >
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <div class="fact-info text-center flex flex-col gap-3 leading-6">
+                <h3 class="text-4xl font-extrabold">१००००००</h3>
+                <p class="text-blue-200">
+                  जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
+                  समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
+                </p>
+              </div>
             </div>
-            <div class="fact-info text-center">
-              <h3 class="text-3xl font-extrabold">१००००००</h3>
-              <p class="text-blue-200">जनसंख्या</p>
-            </div>
-          </div>
-          <div
-            class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
-          >
             <div
-              class="icon w-24 h-24 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-5xl"
+              class="fact-card flex flex-col items-center justify-center px-8 py-12 bg-blue-900 border border-blue-500 hover:bg-blue-800"
             >
-              <i class="fa-solid fa-people-group"></i>
-            </div>
-            <div class="fact-info text-center">
-              <h3 class="text-3xl font-extrabold">१००००००</h3>
-              <p class="text-blue-200">जनसंख्या</p>
+              <div
+                class="icon w-16 h-16 border-2 flex items-center place-content-center rounded rounded-full mb-4 text-3xl"
+              >
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <div class="fact-info text-center flex flex-col gap-3 leading-6">
+                <h3 class="text-4xl font-extrabold">१००००००</h3>
+                <p class="text-blue-200">
+                  जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
+                  समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -559,13 +595,19 @@
 
     <section class="services bg-blue-50 pb-24 text-sm">
       <div class="container mx-auto px-4">
-        <div
-          class="flex items-center justify-center w-full h-full py-24 sm:py-8"
-        >
+        <div class="service-header flex flex-col items-center gap-4">
+          <div
+            class="line h-[1px] w-24 bg-blue-500 flex items-center justify-center rounded-full"
+          >
+            <p class="text-blue-500 p-1 bg-blue-50">हाम्रा</p>
+          </div>
+          <h1 class="text-5xl font-extrabold text-blue-900">सेवाहरु</h1>
+        </div>
+        <div class="flex items-center justify-center w-full h-full py-8">
           <div class="w-full relative flex items-center justify-center">
             <button
               aria-label="slide backward"
-              class="absolute z-30 left-0 ml-[-16px] cursor-pointer h-8 w-8 flex justify-center items-center rounded-full bg-white hover:shadow-2xl"
+              class="absolute z-10 left-0 ml-[-8px] cursor-pointer h-10 w-10 flex justify-center items-center rounded-full bg-white hover:shadow-2xl"
               id="prev"
             >
               <svg
@@ -585,138 +627,161 @@
                 />
               </svg>
             </button>
-            <div
-              class="w-full h-full mx-auto overflow-visible overflow-x-scroll"
-            >
+            <div class="w-full h-full mx-auto overflow-hidden">
               <div
                 id="slider"
-                class="h-full flex gap-8 items-center justify-start transition ease-out duration-700"
+                class="h-full flex items-center justify-start transition ease-out duration-700"
               >
                 <div
-                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 relative w-full lg:w-3/12"
+                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full md:w-6/12 lg:w-3/12 p-4"
                 >
-                  <img
-                    src="https://ssf.gov.np/images/services/16413089529385_scheme-1.jpg"
-                    alt="black chair and white table"
-                    class="object-cover object-center w-full"
-                  />
                   <div
-                    class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                    class="card-contents rounded-md overflow-hidden shadow-lg relative"
                   >
-                    <h2
-                      class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                    <div
+                      class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6 border-b-[1rem]"
                     >
-                      हेलो वर्ल्ण
-                    </h2>
+                      <h2
+                        class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                      >
+                        हेलो वर्ल्ण
+                      </h2>
 
-                    <p>Minimal Interior</p>
+                      <p>Minimal Interior</p>
+                    </div>
+
+                    <img
+                      src="https://ssf.gov.np/images/services/16413089529385_scheme-1.jpg"
+                      alt=""
+                      class="object-cover object-center w-full"
+                    />
                   </div>
                 </div>
                 <div
-                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 relative w-full lg:w-3/12"
+                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full md:w-6/12 lg:w-3/12 p-4"
                 >
-                  <img
-                    src="https://ssf.gov.np/images/services/16395362226463_social%20security%20fundss-03.jpg"
-                    alt="sitting area"
-                    class="object-cover object-center w-full"
-                  />
                   <div
-                    class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                    class="card-contents rounded-md overflow-hidden shadow-lg relative"
                   >
-                    <h2
-                      class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                    <div
+                      class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6 border-b-[1rem]"
                     >
-                      हेलो वर्ल्ण
-                    </h2>
+                      <h2
+                        class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                      >
+                        हेलो वर्ल्ण
+                      </h2>
 
-                    <p>Minimal Interior</p>
+                      <p>Minimal Interior</p>
+                    </div>
+                    <img
+                      src="https://ssf.gov.np/images/services/16395362226463_social%20security%20fundss-03.jpg"
+                      alt="sitting area"
+                      class="object-cover object-center w-full"
+                    />
                   </div>
                 </div>
                 <div
-                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 relative w-full lg:w-3/12"
+                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full md:w-6/12 lg:w-3/12 p-4"
                 >
-                  <img
-                    src="https://ssf.gov.np/images/services/16395362387114_social%20security%20fundss-04.jpg"
-                    alt="sitting area"
-                    class="object-cover object-center w-full"
-                  />
                   <div
-                    class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                    class="card-contents rounded-md overflow-hidden shadow-lg relative"
                   >
-                    <h2
-                      class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                    <div
+                      class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6 border-b-[1rem]"
                     >
-                      हेलो वर्ल्ण
-                    </h2>
+                      <h2
+                        class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                      >
+                        हेलो वर्ल्ण
+                      </h2>
 
-                    <p>Minimal Interior</p>
+                      <p>Minimal Interior</p>
+                    </div>
+                    <img
+                      src="https://ssf.gov.np/images/services/16395362387114_social%20security%20fundss-04.jpg"
+                      alt="sitting area"
+                      class="object-cover object-center w-full"
+                    />
                   </div>
                 </div>
                 <div
-                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 relative w-full lg:w-3/12"
+                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full md:w-6/12 lg:w-3/12 p-4"
                 >
-                  <img
-                    src="https://ssf.gov.np/images/services/16395362387114_social%20security%20fundss-04.jpg"
-                    alt="sitting area"
-                    class="object-cover object-center w-full"
-                  />
                   <div
-                    class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                    class="card-contents rounded-md overflow-hidden shadow-lg relative"
                   >
-                    <h2
-                      class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                    <div
+                      class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6 border-b-[1rem]"
                     >
-                      हेलो वर्ल्ण
-                    </h2>
+                      <h2
+                        class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                      >
+                        हेलो वर्ल्ण
+                      </h2>
 
-                    <p>Minimal Interior</p>
+                      <p>Minimal Interior</p>
+                    </div>
+                    <img
+                      src="https://ssf.gov.np/images/services/16395362387114_social%20security%20fundss-04.jpg"
+                      alt="sitting area"
+                      class="object-cover object-center w-full"
+                    />
                   </div>
                 </div>
                 <div
-                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 relative w-full lg:w-3/12"
+                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full md:w-6/12 lg:w-3/12 p-4"
                 >
-                  <img
-                    src="https://ssf.gov.np/images/services/16395362006951_social%20security%20fundss-01.jpg"
-                    alt="black chair and white table"
-                    class="object-cover object-center w-full"
-                  />
                   <div
-                    class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                    class="card-contents rounded-md overflow-hidden shadow-lg relative"
                   >
-                    <h2
-                      class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                    <div
+                      class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6 border-b-[1rem]"
                     >
-                      हेलो वर्ल्ण
-                    </h2>
+                      <h2
+                        class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                      >
+                        हेलो वर्ल्ण
+                      </h2>
 
-                    <p>Minimal Interior</p>
+                      <p>Minimal Interior</p>
+                    </div>
+                    <img
+                      src="https://ssf.gov.np/images/services/16395362006951_social%20security%20fundss-01.jpg"
+                      alt=""
+                      class="object-cover object-center w-full"
+                    />
                   </div>
                 </div>
                 <div
-                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 relative w-full lg:w-3/12"
+                  class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full md:w-6/12 lg:w-3/12 p-4"
                 >
-                  <img
-                    src="https://ssf.gov.np/images/services/16395362006951_social%20security%20fundss-01.jpg"
-                    alt="sitting area"
-                    class="object-cover object-center w-full"
-                  />
                   <div
-                    class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6"
+                    class="card-contents rounded-md overflow-hidden shadow-lg relative"
                   >
-                    <h2
-                      class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                    <div
+                      class="card-footer flex flex-col gap-2 bg-blue-800 text-white w-full h-full p-6 border-b-[1rem]"
                     >
-                      हेलो वर्ल्ण
-                    </h2>
+                      <h2
+                        class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
+                      >
+                        हेलो वर्ल्ण
+                      </h2>
 
-                    <p>Minimal Interior</p>
+                      <p>Minimal Interior</p>
+                    </div>
+                    <img
+                      src="https://ssf.gov.np/images/services/16395362006951_social%20security%20fundss-01.jpg"
+                      alt="sitting area"
+                      class="object-cover object-center w-full"
+                    />
                   </div>
                 </div>
               </div>
             </div>
             <button
               aria-label="slide forward"
-              class="absolute z-30 right-0 mr-[-16px] cursor-pointer h-8 w-8 flex justify-center items-center rounded-full bg-white"
+              class="absolute z-2 right-0 mr-[-8px] cursor-pointer h-10 w-10 flex justify-center items-center rounded-full bg-white"
               id="next"
             >
               <svg
@@ -741,7 +806,7 @@
       </div>
     </section>
 
-    <!-- <section class="notice-section text-sm bg-blue-50 py-16 lg:py-24">
+    <!-- <section class="notice-section text-sm bg-blue-50 pb-24">
       <div
         class="container mx-auto px-4 grid grid-cols-10 gap-8 place-content-center"
       >

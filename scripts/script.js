@@ -175,14 +175,25 @@ timeline.fromTo(
 
 button.addEventListener("click", () => {
   if (menu.style.display === "none") {
+    gsap.to(".drop-arrow", {
+      //smoothly rotate the arrow
+      transform: "rotate(180deg)",
+      ease: "power2.out",
+    });
     // If the menu is hidden, play the animation forward and reveal it
     menu.style.display = "flex";
     timeline.play();
   } else {
+    gsap.to(".drop-arrow", {
+      transform: "rotate(0deg)",
+      ease: "power2.out",
+    });
     // If the menu is visible, reverse the animation and hide it
     timeline.reverse();
   }
 });
+
+//service slider 
 
 let defaultTransform = 0;
 let slideWidth = 0; // Initialize slide width
