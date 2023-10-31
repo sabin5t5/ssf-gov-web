@@ -201,7 +201,7 @@ const appImages = document.querySelectorAll(".app-img");
 appImages.forEach((image, index) => {
   gsap.to(image, {
     duration: 1, // Animation duration in seconds
-    scale: 1.1, // Move the element 100 pixels to the right
+    scale: 0.9, // Move the element 100 pixels to the right
     yoyo: true, // Play the animation in reverse after it finishes
     repeat: -1, // Repeat the animation indefinitely
     delay: index, // Delay the animation for the second element
