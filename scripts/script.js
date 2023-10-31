@@ -193,7 +193,31 @@ button.addEventListener("click", () => {
   }
 });
 
-//service slider 
+// blinking animate two .app-img all the time
+
+const appImages = document.querySelectorAll(".app-img");
+
+// Create an animation for each element
+appImages.forEach((image, index) => {
+  gsap.to(image, {
+    duration: 1, // Animation duration in seconds
+    scale: 1.1, // Move the element 100 pixels to the right
+    yoyo: true, // Play the animation in reverse after it finishes
+    repeat: -1, // Repeat the animation indefinitely
+    delay: index, // Delay the animation for the second element
+  });
+});
+
+const appImg = document.querySelector(".app-img");
+
+gsap.from(appImg, {
+  duration: 1,
+  y: 200,
+  opacity: 0,
+  ease: "power2.out",
+});
+
+//service slider
 
 let defaultTransform = 0;
 let slideWidth = 0; // Initialize slide width
