@@ -18,14 +18,14 @@ tl.from("nav", {
     x: 100,
     opacity: 0,
     ease: "power2.out",
-  })
-  .from(".card", {
-    duration: 1,
-    y: 200,
-    stagger: 0.2,
-    opacity: 0,
-    ease: "power2.out",
   });
+// .from(".card", {
+//   duration: 1,
+//   y: 200,
+//   stagger: 0.2,
+//   opacity: 0,
+//   ease: "power2.out",
+// });
 
 // scroll trigger
 
