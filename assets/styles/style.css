@@ -1,43 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Mukta", sans-serif;
   /* font-family: "Noto Sans", sans-serif; */
 }
 
-/* .service-card:hover {
-  position: relative;
-}
-
-.service-card:hover .card-footer {
-  display: block;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  transition: all 0.5s ease-in-out;
-} */
-
-/* Define the initial clip-path for the card-contents */
 .video-card-header {
   clip-path: circle(100% at 50% 50%);
   -webkit-clip-path: circle(100% at 50% 50%);
   transition: clip-path 0.5s ease; /* Add a transition effect */
 }
 
-/* Apply the clip-path animation on hover */
 .service-card:hover .video-card-header {
-  /* clip-path: circle(0% at 50% 50%); */
   clip-path: circle(0.4% at 100% 0);
-  /* -webkit-clip-path: circle(0% at 50% 50%); */
+  -webkit-clip-path: circle(0.4% at 100% 0);
 }
