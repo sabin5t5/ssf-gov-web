@@ -1,234 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>सामाजिक सुरक्षा कोष</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <title>सामाजिक सुरक्षा कोष</title>
 
-    <link rel="stylesheet" href="./assets/styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <nav class="top-nav z-[100] relative top-0">
-      <div class="container mx-auto p-4 flex justify-between">
-        <img src="./assets/images/ssf-logo.png" alt="" class="h-12" />
-        <img src="./assets/images/nepaliflag.gif" alt="" class="h-12" />
-      </div>
-    </nav>
-    <nav class="bottom-nav bg-indigo-900 py-4 sticky top-0 z-20 relative">
-      <div class="container flex justify-between mx-auto">
-        <ul class="text-white m-0 p-0 flex lg:flex">
-          <li class="">
-            <a
-              href=""
-              class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition"
-              >गृहपृष्ठ</a
-            >
-          </li>
-          <li class="hidden lg:block">
-            <a
-              href=""
-              class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition"
-              >परिचय</a
-            >
-          </li>
-          <li class="hidden lg:block">
-            <a
-              href=""
-              class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition"
-              >नागरिक वडापत्र</a
-            >
-          </li>
-          <li class="hidden lg:block">
-            <a
-              href=""
-              class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition"
-              >गृहपृष्ठ</a
-            >
-          </li>
-          <li class="hidden lg:block">
-            <a
-              href=""
-              class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition"
-              >परिचय</a
-            >
-          </li>
-          <li class="hidden lg:block">
-            <a
-              href=""
-              class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition"
-              >नागरिक वडापत्र</a
-            >
-          </li>
-        </ul>
-        <button class="ham-btn mr-2 md:mr-0 lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M3 7H21"
-              stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
-            />
-            <path
-              d="M3 12H21"
-              stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
-            />
-            <path
-              d="M3 17H21"
-              stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
-            />
-          </svg>
-        </button>
-      </div>
+  <link rel="stylesheet" href="./assets/styles/style.css" />
 
-      <div
-        class="ham-menu container bg-indigo-900 flex-col mx-auto px-5 py-16 absolute left-0 right-0 w-full h-screen hero-screen z-[0] hidden lg:hidden"
-      >
-        <ul class="text-white p-0 flex flex-col gap-8">
-          <li class="">
-            <a
-              href=""
-              class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition"
-              >गृहपृष्ठ</a
-            >
-          </li>
-          <li class="">
-            <a
-              href=""
-              class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition"
-              >परिचय</a
-            >
-          </li>
-          <li class="">
-            <a
-              href=""
-              class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition"
-              >नागरिक वडापत्र</a
-            >
-          </li>
-          <li class="">
-            <a
-              href=""
-              class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition"
-              >गृहपृष्ठ</a
-            >
-          </li>
-          <li class="">
-            <a
-              href=""
-              class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition"
-              >परिचय</a
-            >
-          </li>
-          <li class="">
-            <a
-              href=""
-              class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition"
-              >नागरिक वडापत्र</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-    <section class="hero-section bg-blue-950 overflow-hidden relative z-[0]">
-      <div class="container mx-auto flex flex-wrap items-stretch relative">
-        <div
-          class="fx-left info-left w-100 lg:w-4/12 xl:w-4/12 flex p-4 py-16 lg:py-16 xl:py-24 z-[1] bg-blue-950 pt-16"
-        >
-          <div class="w-100 flex flex-col w-100 gap-8 bg-blue-950">
-            <h1
-              class="text-5xl font-black leading-snug text-white whitespace-wrap"
-            >
-              सामाजिक सुरक्षा कोष आजैवाट सुरु गरौं
-            </h1>
-            <p class="text-blue-100 leading-relaxed">
-              नेपाल अधिराज्यमा गाभिन पुग्यो र यस भु-भागको सु-शासनलाई सुदृढ र
-              विस्तार गर्नका लागि श्री अमर सिंह थापा यस क्षेत्रका प्रथम
-              प्रशासकका रुपमा नियुक्त भएर आए । उनले यस क्षेत्रको संरक्षण तथा
-              महाकालि पारि पनि विजय अभियानलाई जारी राख्न डडेल्धुरा जिल्लाको
-              अभियानलाई जारी राख्न डडेल्धुरा जिल्लाको सदरमुकाम खलङ्गाको टाकुरामा
-              अमरसिंह थापाद्वारा निमार्ण गरिएको हो ।
-            </p>
+<body>
+  <nav class="top-nav z-[100] relative top-0">
+    <div class="container mx-auto p-4 flex justify-between">
+      <img src="./assets/images/ssf-logo.png" alt="" class="h-12" />
+      <img src="./assets/images/nepaliflag.gif" alt="" class="h-12" />
+    </div>
+  </nav>
+  <nav class="bottom-nav bg-indigo-900 py-4 sticky top-0 z-20 relative">
+    <div class="container flex justify-between mx-auto">
+      <ul class="text-white m-0 p-0 flex lg:flex">
+        <li class="">
+          <a href=""
+            class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition">गृहपृष्ठ</a>
+        </li>
+        <li class="hidden lg:block">
+          <a href=""
+            class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition">परिचय</a>
+        </li>
+        <li class="hidden lg:block">
+          <a href=""
+            class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition">नागरिक
+            वडापत्र</a>
+        </li>
+        <li class="hidden lg:block">
+          <a href=""
+            class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition">गृहपृष्ठ</a>
+        </li>
+        <li class="hidden lg:block">
+          <a href=""
+            class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition">परिचय</a>
+        </li>
+        <li class="hidden lg:block">
+          <a href=""
+            class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition">नागरिक
+            वडापत्र</a>
+        </li>
+      </ul>
+      <button class="ham-btn mr-2 md:mr-0 lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M3 7H21" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M3 12H21" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M3 17H21" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
 
-            <div class="ctas flex gap-4 mt-5">
-              <a
-                href=""
-                class="bg-white text-blue-950 px-8 py-3 rounded-md font-bold hover:bg-blue-50"
-                >थप पढ्नुहोस्</a
-              >
-              <a
-                href=""
-                class="border border-white text-white px-8 py-3 rounded-md font-bold hover:bg-white hover:text-blue-950"
-                >थप पढ्नुहोस्</a
-              >
-            </div>
+    <div
+      class="ham-menu container bg-indigo-900 flex-col mx-auto px-5 py-16 absolute left-0 right-0 w-full h-screen hero-screen z-[0] hidden lg:hidden">
+      <ul class="text-white p-0 flex flex-col gap-8">
+        <li class="">
+          <a href=""
+            class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition">गृहपृष्ठ</a>
+        </li>
+        <li class="">
+          <a href=""
+            class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition">परिचय</a>
+        </li>
+        <li class="">
+          <a href=""
+            class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition">नागरिक
+            वडापत्र</a>
+        </li>
+        <li class="">
+          <a href=""
+            class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition">गृहपृष्ठ</a>
+        </li>
+        <li class="">
+          <a href=""
+            class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition">परिचय</a>
+        </li>
+        <li class="">
+          <a href=""
+            class="px-4 py-2 font-medium text-white rounded-md hover:bg-white hover:bg-opacity-20 transition">नागरिक
+            वडापत्र</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero-section bg-blue-950 overflow-hidden relative z-[0]">
+    <div class="container mx-auto flex flex-wrap items-stretch relative">
+      <div class="fx-left info-left w-100 lg:w-4/12 xl:w-4/12 flex p-4 py-16 lg:py-16 xl:py-24 z-[1] bg-blue-950 pt-16">
+        <div class="w-100 flex flex-col w-100 gap-8 bg-blue-950">
+          <h1 class="text-5xl font-black leading-snug text-white whitespace-wrap">
+            सामाजिक सुरक्षा कोष आजैवाट सुरु गरौं
+          </h1>
+          <p class="text-blue-100 leading-relaxed">
+            नेपाल अधिराज्यमा गाभिन पुग्यो र यस भु-भागको सु-शासनलाई सुदृढ र
+            विस्तार गर्नका लागि श्री अमर सिंह थापा यस क्षेत्रका प्रथम
+            प्रशासकका रुपमा नियुक्त भएर आए । उनले यस क्षेत्रको संरक्षण तथा
+            महाकालि पारि पनि विजय अभियानलाई जारी राख्न डडेल्धुरा जिल्लाको
+            अभियानलाई जारी राख्न डडेल्धुरा जिल्लाको सदरमुकाम खलङ्गाको टाकुरामा
+            अमरसिंह थापाद्वारा निमार्ण गरिएको हो ।
+          </p>
+
+          <div class="ctas flex gap-4 mt-5">
+            <a href="" class="bg-white text-blue-950 px-8 py-3 rounded-md font-bold hover:bg-blue-50">थप पढ्नुहोस्</a>
+            <a href=""
+              class="border border-white text-white px-8 py-3 rounded-md font-bold hover:bg-white hover:text-blue-950">थप
+              पढ्नुहोस्</a>
           </div>
         </div>
-        <img
-          src="./assets/images/hero-asset.svg"
-          alt=""
-          class="fx-left z-[2] hidden h-[10%] lg:block"
-        />
-
-        <div class="divider w-full relative">
-          <img
-            src="./assets/images/hero-asset-sm.svg"
-            alt=""
-            class="fx-left absolute top-[-1px] w-full block lg:hidden bottom-0 z-[101]"
-          />
-        </div>
-        <div
-          class="info-right bg-cover relative h-[24rem] lg:h-full w-full lg:w-8/12 overflow-hidden flex lg:absolute block right-0 lg:top-[0] bottom-0 z-[0]"
-        >
-          <img
-            src="https://assets.change.org/photos/8/lw/vo/VzlWvoifLnXkjZJ-1600x900-noPad.jpg?1623422759"
-            alt=""
-            class="fx-right h-full w-full lg:h-full object-cover"
-          />
-          <img
-            src="https://machhapuchhremun.gov.np/sites/machhapuchhremun.gov.np/files/img/slider/Fishtail%20Mountain_1.JPG"
-            alt=""
-            class="fx-right h-full w-full lg:h-full object-cover"
-          />
-          <img
-            src="https://www.ntnc.org.np/sites/default/files/styles/slider_1920x1024/public/default_images/default-cover_0.jpg?itok=14XRQdhm"
-            alt=""
-            class="fx-right h-full w-full lg:h-full object-cover"
-          />
-        </div>
       </div>
-    </section>
+      <img src="./assets/images/hero-asset.svg" alt="" class="fx-left z-[2] hidden h-[10%] lg:block" />
 
-    <section
-      class="faq-section flex place-content-center bg-blue-50 pt-16 lg:pt-0 lg:mt-[-4rem]"
-    >
-      <div class="container container px-4 mx-auto flex place-content-center">
-        <div
-          class="dropdown-wrapper flex flex-col gap-4 w-full lg:w-7/12 relative inline-block"
-        >
-          <div class="transition-all">
-            <button
+      <div class="divider w-full relative">
+        <img src="./assets/images/hero-asset-sm.svg" alt=""
+          class="fx-left absolute top-[-1px] w-full block lg:hidden bottom-0 z-[101]" />
+      </div>
+      <div
+        class="info-right bg-cover relative h-[24rem] lg:h-full w-full lg:w-8/12 overflow-hidden flex lg:absolute block right-0 lg:top-[0] bottom-0 z-[0]">
+        <img src="https://assets.change.org/photos/8/lw/vo/VzlWvoifLnXkjZJ-1600x900-noPad.jpg?1623422759" alt=""
+          class="fx-right h-full w-full lg:h-full object-cover" />
+        <img
+          src="https://machhapuchhremun.gov.np/sites/machhapuchhremun.gov.np/files/img/slider/Fishtail%20Mountain_1.JPG"
+          alt="" class="fx-right h-full w-full lg:h-full object-cover" />
+        <img
+          src="https://www.ntnc.org.np/sites/default/files/styles/slider_1920x1024/public/default_images/default-cover_0.jpg?itok=14XRQdhm"
+          alt="" class="fx-right h-full w-full lg:h-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section flex place-content-center bg-blue-50 pt-16 lg:pt-0 lg:mt-[-4rem]">
+    <div class="container container px-4 mx-auto flex place-content-center">
+      <div class="dropdown-wrapper flex flex-col gap-4 w-full lg:w-7/12 relative inline-block">
+        <div class="transition-all">
+          <!-- <button
               type="button"
               class="flex justify-between items-center w-full gap-x-1.5 rounded-md bg-white px-8 md:px-12 py-8 text-lg shadow-md hover:shadow-2xl transition-all transition-shadow border border-transparent hover:border-blue-800"
               id="menu-button"
@@ -254,1068 +169,793 @@
                   />
                 </svg>
               </div>
-            </button>
-          </div>
-
-          <div
-            class="dropdown-menu z-1 w-full rounded-md bg-white shadow-2xl ring-1 ring-black ring-opacity-5 border border-transparent focus:outline-none hover:border hover:border-blue-800"
-            role="menu"
-            aria-orientation="vertical"
-            aria-labelledby="menu-button"
-            tabindex="-1"
-          >
-            <div class="py-1 transition-colors w-full" role="none">
-              <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-              <a
-                href="#"
-                class="text-slate-500 hover:text-blue-800 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-0"
-              >
-                सामाजिक सुरक्षा कोष भनेको के हो ?
-              </a>
-              <a
-                href="#"
-                class="text-slate-500 hover:text-blue-800 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-1"
-                >सामाजिक सुरक्षा कोषलाई कसरि सुरुवात गर्ने ?</a
-              >
-              <a
-                href="#"
-                class="text-slate-500 hover:text-blue-800 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-2"
-                >सामाजिक सुरक्षा कोष कहिले देखी लागु हुन्छ ?</a
-              >
-              <a
-                href="#"
-                class="text-slate-500 hover:text-blue-800 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-0"
-              >
-                सामाजिक सुरक्षा कोष भनेको के हो ?
-              </a>
-              <a
-                href="#"
-                class="text-slate-500 hover:text-blue-800 hover:font-bold hover:bg-blue-50 block px-8 py-4"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-1"
-                >सामाजिक सुरक्षा कोषलाई कसरि सुरुवात गर्ने ?</a
-              >
-              <a
-                href="#"
-                class="text-slate-500 hover:text-blue-800 hover:font-bold hover:bg-blue-50 block px-8 py-4"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-2"
-                >सामाजिक सुरक्षा कोष कहिले देखी लागु हुन्छ ?</a
-              >
-            </div>
-          </div>
+            </button> -->
+        </div>
+<!-- 
+        <div
+          class="dropdown-menu z-1 w-full rounded-md bg-white shadow-2xl ring-1 ring-black ring-opacity-5 border border-transparent focus:outline-none hover:border hover:border-blue-800"
+          role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+          <div class="py-1 transition-colors w-full" role="none"> -->
+            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+            <!-- <a href="#"
+              class="text-slate-500 hover:text-blue-800 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4"
+              role="menuitem" tabindex="-1" id="menu-item-0">
+              सामाजिक सुरक्षा कोष भनेको के हो ?
+            </a>
+            <a href="#"
+              class="text-slate-500 hover:text-blue-800 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4"
+              role="menuitem" tabindex="-1" id="menu-item-1">सामाजिक सुरक्षा कोषलाई कसरि सुरुवात गर्ने ?</a>
+            <a href="#"
+              class="text-slate-500 hover:text-blue-800 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4"
+              role="menuitem" tabindex="-1" id="menu-item-2">सामाजिक सुरक्षा कोष कहिले देखी लागु हुन्छ ?</a>
+            <a href="#"
+              class="text-slate-500 hover:text-blue-800 hover:font-bold hover:bg-blue-50 w-full block px-8 py-4"
+              role="menuitem" tabindex="-1" id="menu-item-0">
+              सामाजिक सुरक्षा कोष भनेको के हो ?
+            </a>
+            <a href="#" class="text-slate-500 hover:text-blue-800 hover:font-bold hover:bg-blue-50 block px-8 py-4"
+              role="menuitem" tabindex="-1" id="menu-item-1">सामाजिक सुरक्षा कोषलाई कसरि सुरुवात गर्ने ?</a>
+            <a href="#" class="text-slate-500 hover:text-blue-800 hover:font-bold hover:bg-blue-50 block px-8 py-4"
+              role="menuitem" tabindex="-1" id="menu-item-2">सामाजिक सुरक्षा कोष कहिले देखी लागु हुन्छ ?</a>
+          </div> -->
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="body-content bg-blue-50 py-16">
-      <div class="container mx-auto px-5">
-        <div class="grid grid-cols-5 gap-12">
+  <section class="body-content bg-blue-50 py-16">
+    <div class="container mx-auto px-5 mt-3">
+      <div class="grid grid-cols-5 gap-12">
+        <section
+          class="left-section col-span-5 md:col-span-6 lg:col-span-4 flex flex-col gap-10 leading-relaxed bg-blue-50">
           <section
-            class="left-section col-span-5 md:col-span-6 lg:col-span-4 flex flex-col gap-10 leading-relaxed bg-blue-50"
-          >
-            <section
-              class="portal-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 transition-border duration-500 ease-in-out"
-            >
-              <a
-                href=""
-                class="card flex items-center gap-4 rounded-lg px-5 h-24 bg-white shadow-sm hover:shadow-2xl transition-shadow border-l-8 text-blue-800 hover:text-blue-600 border-blue-700 hover:border-blue-500 cursor-pointer"
-              >
-                <span class="text-xl"><i class="fa-solid fa-file-circle-plus"></i></span>
-                <h5 class="font-bold">रोजगारदाता सूचीकरण</h5>
-              </a>
+            class="portal-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 transition-border duration-500 ease-in-out">
+            <a href=""
+              class="card flex items-center gap-4 rounded-lg px-5 h-24 bg-white shadow-sm hover:shadow-2xl transition-shadow border-l-8 text-blue-800 hover:text-blue-600 border-blue-700 hover:border-blue-500 cursor-pointer">
+              <span class="text-xl"><i class="fa-solid fa-file-circle-plus"></i></span>
+              <h5 class="font-bold">रोजगारदाता सूचीकरण</h5>
+            </a>
 
-              <a
-                href=""
-                class="card flex items-center gap-4 rounded-lg px-5 h-24 bg-white shadow-sm hover:shadow-2xl transition-shadow border-l-8 text-blue-800 hover:text-blue-600 border-blue-700 hover:border-blue-500 cursor-pointer"
-              >
-                <span class="text-xl"><i class="fa-solid fa-comment-dollar"></i></span>
-                <h5 class="font-bold">सुबिधा दाबी भुक्तानी अवस्थाको जांच गर्नुहोस</h5>
-              </a>
-              <a
-                href=""
-                class="card flex items-center gap-4 rounded-lg px-5 h-24 bg-white shadow-sm hover:shadow-2xl transition-shadow border-l-8 text-blue-800 hover:text-blue-600 border-blue-700 hover:border-blue-500 cursor-pointer"
-              >
-                <span class="text-xl"><i class="fa-solid fa-id-badge"></i></span>
-                <h5 class="font-bold">KYC update गर्नुहोस</h5>
-              </a>
-              <a
-                href=""
-                class="card flex items-center gap-4 rounded-lg px-5 h-24 bg-white shadow-sm hover:shadow-2xl transition-shadow border-l-8 text-blue-800 hover:text-blue-600 border-blue-700 hover:border-blue-500 cursor-pointer"
-              >
-                <span class="text-xl"><i class="fa-solid fa-briefcase"></i></span>
-                <h5 class="font-bold">Non मेडिकल सुबिधा दाबि गर्नुहोस</h5>
-              </a>
-              <a
-                href=""
-                class="card flex items-center gap-4 rounded-lg px-5 h-24 bg-white shadow-sm hover:shadow-2xl transition-shadow border-l-8 text-blue-800 hover:text-blue-600 border-blue-700 hover:border-blue-500 cursor-pointer"
-              >
-                <span class="text-xl"><i class="fa-solid fa-sack-dollar"></i></span>
-                <h5 class="font-bold">योगदान रकम जांच गर्नुहोस</h5>
-              </a>
-              <a
-                href=""
-                class="card flex items-center gap-4 rounded-lg px-5 h-24 bg-white shadow-sm hover:shadow-2xl transition-shadow border-l-8 text-blue-800 hover:text-blue-600 border-blue-700 hover:border-blue-500 cursor-pointer"
-              >
-                <span class="text-xl"><i class="fa-solid fa-person-circle-question"></i></span>
-                <h5 class="font-bold">गुनासो</h5>
-              </a>
-              <a
-                href=""
-                class="card flex items-center gap-4 rounded-lg px-5 h-24 bg-white shadow-sm hover:shadow-2xl transition-shadow border-l-8 text-blue-800 hover:text-blue-600 border-blue-700 hover:border-blue-500 cursor-pointer"
-              >
-                <span class="text-xl"><i class="fa-solid fa-hospital"></i></span>
-                <h5 class="font-bold">आबद्द अस्पतालहरु</h5>
-              </a>
-              <a
-                href=""
-                class="card flex items-center gap-4 rounded-lg px-5 h-24 bg-white shadow-sm hover:shadow-2xl transition-shadow border-l-8 text-blue-800 hover:text-blue-600 border-blue-700 hover:border-blue-500 cursor-pointer"
-              >
-                <span class="text-xl"><i class="fa-solid fa-wallet"></i></span>
-                <h5 class="font-bold">सापटी माग/भुक्तानी गर्नुहोस</h5>
-              </a>
-            </section>
-            <section class="services-section">
-              <div class="flex items-center justify-center w-full h-full">
-                <div class="w-full relative flex items-center justify-center">
-                  <button
-                    aria-label="slide backward"
-                    class="absolute z-10 left-[-16px] cursor-pointer h-10 w-10 flex justify-center items-center rounded-full bg-white hover:shadow-2xl transition-all"
-                    id="prev"
-                  >
-                    <svg
-                      class="dark:text-blue-800"
-                      width="8"
-                      height="14"
-                      viewBox="0 0 8 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7 1L1 7L7 13"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                  <div class="h-full mx-auto overflow-hidden">
+            <a href=""
+              class="card flex items-center gap-4 rounded-lg px-5 h-24 bg-white shadow-sm hover:shadow-2xl transition-shadow border-l-8 text-blue-800 hover:text-blue-600 border-blue-700 hover:border-blue-500 cursor-pointer">
+              <span class="text-xl"><i class="fa-solid fa-comment-dollar"></i></span>
+              <h5 class="font-bold">सुबिधा दाबी भुक्तानी अवस्थाको जांच गर्नुहोस</h5>
+            </a>
+            <a href=""
+              class="card flex items-center gap-4 rounded-lg px-5 h-24 bg-white shadow-sm hover:shadow-2xl transition-shadow border-l-8 text-blue-800 hover:text-blue-600 border-blue-700 hover:border-blue-500 cursor-pointer">
+              <span class="text-xl"><i class="fa-solid fa-id-badge"></i></span>
+              <h5 class="font-bold">KYC update गर्नुहोस</h5>
+            </a>
+            <a href=""
+              class="card flex items-center gap-4 rounded-lg px-5 h-24 bg-white shadow-sm hover:shadow-2xl transition-shadow border-l-8 text-blue-800 hover:text-blue-600 border-blue-700 hover:border-blue-500 cursor-pointer">
+              <span class="text-xl"><i class="fa-solid fa-briefcase"></i></span>
+              <h5 class="font-bold">Non मेडिकल सुबिधा दाबि गर्नुहोस</h5>
+            </a>
+            <a href=""
+              class="card flex items-center gap-4 rounded-lg px-5 h-24 bg-white shadow-sm hover:shadow-2xl transition-shadow border-l-8 text-blue-800 hover:text-blue-600 border-blue-700 hover:border-blue-500 cursor-pointer">
+              <span class="text-xl"><i class="fa-solid fa-sack-dollar"></i></span>
+              <h5 class="font-bold">योगदान रकम जांच गर्नुहोस</h5>
+            </a>
+            <a href=""
+              class="card flex items-center gap-4 rounded-lg px-5 h-24 bg-white shadow-sm hover:shadow-2xl transition-shadow border-l-8 text-blue-800 hover:text-blue-600 border-blue-700 hover:border-blue-500 cursor-pointer">
+              <span class="text-xl"><i class="fa-solid fa-person-circle-question"></i></span>
+              <h5 class="font-bold">गुनासो</h5>
+            </a>
+            <a href=""
+              class="card flex items-center gap-4 rounded-lg px-5 h-24 bg-white shadow-sm hover:shadow-2xl transition-shadow border-l-8 text-blue-800 hover:text-blue-600 border-blue-700 hover:border-blue-500 cursor-pointer">
+              <span class="text-xl"><i class="fa-solid fa-hospital"></i></span>
+              <h5 class="font-bold">आबद्द अस्पतालहरु</h5>
+            </a>
+            <a href=""
+              class="card flex items-center gap-4 rounded-lg px-5 h-24 bg-white shadow-sm hover:shadow-2xl transition-shadow border-l-8 text-blue-800 hover:text-blue-600 border-blue-700 hover:border-blue-500 cursor-pointer">
+              <span class="text-xl"><i class="fa-solid fa-wallet"></i></span>
+              <h5 class="font-bold">सापटी माग/भुक्तानी गर्नुहोस</h5>
+            </a>
+          </section>
+          <section class="services-section">
+            <div class="flex items-center justify-center w-full h-full">
+              <div class="w-full relative flex items-center justify-center">
+                <button aria-label="slide backward"
+                  class="absolute z-10 left-[-16px] cursor-pointer h-10 w-10 flex justify-center items-center rounded-full bg-white hover:shadow-2xl transition-all"
+                  id="prev">
+                  <svg class="dark:text-blue-800" width="8" height="14" viewBox="0 0 8 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <div class="h-full mx-auto overflow-hidden">
+                  <div id="slider"
+                    class="h-full flex items-center justify-start transition ease-out duration-700 mx-[-12px]">
                     <div
-                      id="slider"
-                      class="h-full flex items-center justify-start transition ease-out duration-700 mx-[-12px]"
-                    >
-                      <div
-                        class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full lg:w-4/12 xl:w-3/12 p-3"
-                      >
+                      class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full lg:w-4/12 xl:w-3/12 p-3">
+                      <div class="card-contents rounded-md overflow-hidden shadow-md relative">
                         <div
-                          class="card-contents rounded-md overflow-hidden shadow-md relative"
-                        >
-                          <div
-                            class="absolute video-card-header flex flex-col gap-2 bg-gradient-to-b from-blue-900 text-white h-full w-full px-6 py-6"
-                          >
-                            <h2
-                              class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
-                            >
-                              हेलो वर्ल्ण
-                            </h2>
+                          class="absolute video-card-header flex flex-col gap-2 bg-gradient-to-b from-blue-900 text-white h-full w-full px-6 py-6">
+                          <h2 class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white">
+                            हेलो वर्ल्ण
+                          </h2>
 
-                            <p>Minimal Interior</p>
-                          </div>
-                          <iframe
-                            class="aspect-video aspect-video"
-                            height="100%"
-                            width="100%"
-                            src="https://www.youtube.com/embed/ZvQyeqeAkkw"
-                            title="Koven - Never Have I Felt This (VIP) | DnB | NCS - Copyright Free Music"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                          ></iframe>
+                          <p>Minimal Interior</p>
                         </div>
+                        <iframe class="aspect-video aspect-video" height="100%" width="100%"
+                          src="https://www.youtube.com/embed/ZvQyeqeAkkw"
+                          title="Koven - Never Have I Felt This (VIP) | DnB | NCS - Copyright Free Music"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen></iframe>
                       </div>
-                      <div
-                        class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full lg:w-4/12 xl:w-3/12 p-3"
-                      >
+                    </div>
+                    <div
+                      class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full lg:w-4/12 xl:w-3/12 p-3">
+                      <div class="card-contents rounded-md overflow-hidden shadow-md relative">
                         <div
-                          class="card-contents rounded-md overflow-hidden shadow-md relative"
-                        >
-                          <div
-                            class="absolute video-card-header flex flex-col gap-2 bg-gradient-to-b from-blue-900 text-white h-full w-full px-6 py-6"
-                          >
-                            <h2
-                              class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
-                            >
-                              हेलो वर्ल्ण
-                            </h2>
+                          class="absolute video-card-header flex flex-col gap-2 bg-gradient-to-b from-blue-900 text-white h-full w-full px-6 py-6">
+                          <h2 class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white">
+                            हेलो वर्ल्ण
+                          </h2>
 
-                            <p>Minimal Interior</p>
-                          </div>
-                          <iframe
-                            class="aspect-video"
-                            height="100%"
-                            width="100%"
-                            src="https://www.youtube.com/embed/ZvQyeqeAkkw"
-                            title="Koven - Never Have I Felt This (VIP) | DnB | NCS - Copyright Free Music"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                          ></iframe>
+                          <p>Minimal Interior</p>
                         </div>
+                        <iframe class="aspect-video" height="100%" width="100%"
+                          src="https://www.youtube.com/embed/ZvQyeqeAkkw"
+                          title="Koven - Never Have I Felt This (VIP) | DnB | NCS - Copyright Free Music"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen></iframe>
                       </div>
-                      <div
-                        class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full lg:w-4/12 xl:w-3/12 p-3"
-                      >
+                    </div>
+                    <div
+                      class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full lg:w-4/12 xl:w-3/12 p-3">
+                      <div class="card-contents rounded-md overflow-hidden shadow-md relative">
                         <div
-                          class="card-contents rounded-md overflow-hidden shadow-md relative"
-                        >
-                          <div
-                            class="absolute video-card-header flex flex-col gap-2 bg-gradient-to-b from-blue-900 text-white h-full w-full px-6 py-6"
-                          >
-                            <h2
-                              class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
-                            >
-                              हेलो वर्ल्ण
-                            </h2>
+                          class="absolute video-card-header flex flex-col gap-2 bg-gradient-to-b from-blue-900 text-white h-full w-full px-6 py-6">
+                          <h2 class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white">
+                            हेलो वर्ल्ण
+                          </h2>
 
-                            <p>Minimal Interior</p>
-                          </div>
-                          <iframe
-                            class="aspect-video"
-                            height="100%"
-                            width="100%"
-                            src="https://www.youtube.com/embed/ZvQyeqeAkkw"
-                            title="Koven - Never Have I Felt This (VIP) | DnB | NCS - Copyright Free Music"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                          ></iframe>
+                          <p>Minimal Interior</p>
                         </div>
+                        <iframe class="aspect-video" height="100%" width="100%"
+                          src="https://www.youtube.com/embed/ZvQyeqeAkkw"
+                          title="Koven - Never Have I Felt This (VIP) | DnB | NCS - Copyright Free Music"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen></iframe>
                       </div>
-                      <div
-                        class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full lg:w-4/12 xl:w-3/12 p-3"
-                      >
+                    </div>
+                    <div
+                      class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full lg:w-4/12 xl:w-3/12 p-3">
+                      <div class="card-contents rounded-md overflow-hidden shadow-md relative">
                         <div
-                          class="card-contents rounded-md overflow-hidden shadow-md relative"
-                        >
-                          <div
-                            class="absolute video-card-header flex flex-col gap-2 bg-gradient-to-b from-blue-900 text-white h-full w-full px-6 py-6"
-                          >
-                            <h2
-                              class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
-                            >
-                              हेलो वर्ल्ण
-                            </h2>
+                          class="absolute video-card-header flex flex-col gap-2 bg-gradient-to-b from-blue-900 text-white h-full w-full px-6 py-6">
+                          <h2 class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white">
+                            हेलो वर्ल्ण
+                          </h2>
 
-                            <p>Minimal Interior</p>
-                          </div>
-                          <iframe
-                            class="aspect-video"
-                            height="100%"
-                            width="100%"
-                            src="https://www.youtube.com/embed/ZvQyeqeAkkw"
-                            title="Koven - Never Have I Felt This (VIP) | DnB | NCS - Copyright Free Music"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                          ></iframe>
+                          <p>Minimal Interior</p>
                         </div>
+                        <iframe class="aspect-video" height="100%" width="100%"
+                          src="https://www.youtube.com/embed/ZvQyeqeAkkw"
+                          title="Koven - Never Have I Felt This (VIP) | DnB | NCS - Copyright Free Music"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen></iframe>
                       </div>
-                      <div
-                        class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full lg:w-4/12 xl:w-3/12 p-3"
-                      >
+                    </div>
+                    <div
+                      class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full lg:w-4/12 xl:w-3/12 p-3">
+                      <div class="card-contents rounded-md overflow-hidden shadow-md relative">
                         <div
-                          class="card-contents rounded-md overflow-hidden shadow-md relative"
-                        >
-                          <div
-                            class="absolute video-card-header flex flex-col gap-2 bg-gradient-to-b from-blue-900 text-white h-full w-full px-6 py-6"
-                          >
-                            <h2
-                              class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
-                            >
-                              हेलो वर्ल्ण
-                            </h2>
+                          class="absolute video-card-header flex flex-col gap-2 bg-gradient-to-b from-blue-900 text-white h-full w-full px-6 py-6">
+                          <h2 class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white">
+                            हेलो वर्ल्ण
+                          </h2>
 
-                            <p>Minimal Interior</p>
-                          </div>
-                          <iframe
-                            class="aspect-video"
-                            height="100%"
-                            width="100%"
-                            src="https://www.youtube.com/embed/ZvQyeqeAkkw"
-                            title="Koven - Never Have I Felt This (VIP) | DnB | NCS - Copyright Free Music"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                          ></iframe>
+                          <p>Minimal Interior</p>
                         </div>
+                        <iframe class="aspect-video" height="100%" width="100%"
+                          src="https://www.youtube.com/embed/ZvQyeqeAkkw"
+                          title="Koven - Never Have I Felt This (VIP) | DnB | NCS - Copyright Free Music"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen></iframe>
                       </div>
-                      <div
-                        class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full lg:w-4/12 xl:w-3/12 p-3"
-                      >
+                    </div>
+                    <div
+                      class="service-card flex flex-col rounded overflow-hidden flex-shrink-0 w-full lg:w-4/12 xl:w-3/12 p-3">
+                      <div class="card-contents rounded-md overflow-hidden shadow-md relative">
                         <div
-                          class="card-contents rounded-md overflow-hidden shadow-md relative"
-                        >
-                          <div
-                            class="absolute video-card-header flex flex-col gap-2 bg-gradient-to-b from-blue-900 text-white h-full w-full px-6 py-6"
-                          >
-                            <h2
-                              class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white"
-                            >
-                              हेलो वर्ल्ण
-                            </h2>
+                          class="absolute video-card-header flex flex-col gap-2 bg-gradient-to-b from-blue-900 text-white h-full w-full px-6 py-6">
+                          <h2 class="lg:text-xl font-extrabold leading-4 text-base lg:leading-5 text-white">
+                            हेलो वर्ल्ण
+                          </h2>
 
-                            <p>Minimal Interior</p>
-                          </div>
-
-                          <iframe
-                            class="aspect-video"
-                            height="100%"
-                            width="100%"
-                            src="https://www.youtube.com/embed/ZvQyeqeAkkw"
-                            title="Koven - Never Have I Felt This (VIP) | DnB | NCS - Copyright Free Music"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                          ></iframe>
+                          <p>Minimal Interior</p>
                         </div>
+
+                        <iframe class="aspect-video" height="100%" width="100%"
+                          src="https://www.youtube.com/embed/ZvQyeqeAkkw"
+                          title="Koven - Never Have I Felt This (VIP) | DnB | NCS - Copyright Free Music"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen></iframe>
                       </div>
                     </div>
                   </div>
-                  <button
-                    aria-label="slide forward"
-                    class="absolute z-2 right-[-16px] cursor-pointer h-10 w-10 flex justify-center items-center rounded-full bg-white"
-                    id="next"
-                  >
-                    <svg
-                      class="dark:text-blue-800"
-                      width="8"
-                      height="14"
-                      viewBox="0 0 8 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 1L7 7L1 13"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
                 </div>
+                <button aria-label="slide forward"
+                  class="absolute z-2 right-[-16px] cursor-pointer h-10 w-10 flex justify-center items-center rounded-full bg-white"
+                  id="next">
+                  <svg class="dark:text-blue-800" width="8" height="14" viewBox="0 0 8 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
               </div>
-            </section>
-            <section class="fact-section bg-blue-50 overflow-hidden">
-              <div class="facts">
+            </div>
+          </section>
+          <section class="fact-section bg-blue-50 overflow-hidden">
+            <div class="facts">
+              <div class="fact-header bg-white border py-8 text-center flex flex-col items-center gap-4 rounded-t-lg">
+                <div class="line h-[1px] w-48 bg-blue-500 flex items-center justify-center rounded-full">
+                  <p class="text-blue-500 p-1 bg-white">
+                    सामाजिक सुरक्षा कोषका केही
+                  </p>
+                </div>
+                <h3 class="text-3xl font-extrabold text-blue-800">
+                  तथ्याङ्कहरु
+                </h3>
+              </div>
+              <div
+                class="fact-grid bg-white grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-white overflow-hidden rounded-b-lg">
                 <div
-                  class="fact-header bg-white border py-8 text-center flex flex-col items-center gap-4 rounded-t-lg"
-                >
-                  <div
-                    class="line h-[1px] w-48 bg-blue-500 flex items-center justify-center rounded-full"
-                  >
-                    <p class="text-blue-500 p-1 bg-white">
-                      सामाजिक सुरक्षा कोषका केही
+                  class="fact-card border flex flex-col items-center justify-center px-8 py-12 text-blue-800 hover:bg-blue-50">
+                  <div class="icon w-16 h-16 flex items-center place-content-center mb-4 text-3xl">
+                    <img src="https://ssf.gov.np/logo/employer.svg" alt="">
+                  </div>
+                  <div class="fact-info text-center flex flex-col gap-3 leading-6">
+                    <h3 class="text-4xl font-extrabold">१८३९४</h3>
+                    <p class="text-slate-500">
+                      सूचीकृत रोजगारदाता
                     </p>
                   </div>
-                  <h3 class="text-3xl font-extrabold text-blue-800">
-                    तथ्याङ्कहरु
-                  </h3>
                 </div>
                 <div
-                  class="fact-grid bg-white grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-white overflow-hidden rounded-b-lg"
-                >
-                  <div
-                    class="fact-card border flex flex-col items-center justify-center px-8 py-12 text-blue-800 hover:bg-blue-50"
-                  >
-                    <div
-                      class="icon w-16 h-16 flex items-center place-content-center mb-4 text-3xl"
-                    >
-                      <img src="https://ssf.gov.np/logo/employer.svg" alt="">
-                    </div>
-                    <div
-                      class="fact-info text-center flex flex-col gap-3 leading-6"
-                    >
-                      <h3 class="text-4xl font-extrabold">१८३९४</h3>
-                      <p class="text-slate-500">
-                        सूचीकृत रोजगारदाता
-                      </p>
-                    </div>
+                  class="fact-card border flex flex-col items-center justify-center px-8 py-12 text-blue-800 hover:bg-blue-50">
+                  <div class="icon w-16 h-16 flex items-center place-content-center mb-4 text-3xl">
+                    <img src="https://ssf.gov.np/logo/contributers.svg" alt="">
                   </div>
-                  <div
-                    class="fact-card border flex flex-col items-center justify-center px-8 py-12 text-blue-800 hover:bg-blue-50"
-                  >
-                    <div
-                      class="icon w-16 h-16 flex items-center place-content-center mb-4 text-3xl"
-                    >
-                      <img src="https://ssf.gov.np/logo/contributers.svg" alt="">
-                    </div>
-                    <div
-                      class="fact-info text-center flex flex-col gap-3 leading-6"
-                    >
-                      <h3 class="text-4xl font-extrabold">८६७९६६</h3>
-                      <p class="text-slate-500">
-                        सूचीकृत योगदानकर्ता
-                      </p>
-                    </div>
+                  <div class="fact-info text-center flex flex-col gap-3 leading-6">
+                    <h3 class="text-4xl font-extrabold">८६७९६६</h3>
+                    <p class="text-slate-500">
+                      सूचीकृत योगदानकर्ता
+                    </p>
                   </div>
+                </div>
 
-                  <div
-                    class="fact-card border flex flex-col items-center justify-center px-8 py-12 text-blue-800 hover:bg-blue-50"
-                  >
-                    <div
-                      class="icon w-16 h-16 flex items-center place-content-center mb-4 text-3xl"
-                    >
-                      <img src="https://ssf.gov.np/logo/contribution.svg">
-                    </div>
-                    <div
-                      class="fact-info text-center flex flex-col gap-3 leading-6"
-                    >
-                      <h3 class="text-4xl font-extrabold">४३८३.४८ करोड</h3>
-                      <p class="text-slate-500">
-                        कुल योगदान रकम
-                      </p>
-                    </div>
+                <div
+                  class="fact-card border flex flex-col items-center justify-center px-8 py-12 text-blue-800 hover:bg-blue-50">
+                  <div class="icon w-16 h-16 flex items-center place-content-center mb-4 text-3xl">
+                    <img src="https://ssf.gov.np/logo/contribution.svg">
                   </div>
-                  <div
-                    class="fact-card border flex flex-col items-center justify-center px-8 py-12 text-blue-800 hover:bg-blue-50"
-                  >
-                    <div
-                      class="icon w-16 h-16 flex items-center place-content-center mb-4 text-3xl"
-                    >
+                  <div class="fact-info text-center flex flex-col gap-3 leading-6">
+                    <h3 class="text-4xl font-extrabold">४३८३.४८ करोड</h3>
+                    <p class="text-slate-500">
+                      कुल योगदान रकम
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="fact-card border flex flex-col items-center justify-center px-8 py-12 text-blue-800 hover:bg-blue-50">
+                  <div class="icon w-16 h-16 flex items-center place-content-center mb-4 text-3xl">
                     <img src="https://ssf.gov.np/logo/claim_payment.svg">
-                    </div>
-                    <div
-                      class="fact-info text-center flex flex-col gap-3 leading-6"
-                    >
-                      <h3 class="text-4xl font-extrabold">६२६.४१ करोड</h3>
-                      <p class="text-slate-500">
-                        कुल दावी भुक्तानी रकम
-                      </p>
-                    </div>
                   </div>
+                  <div class="fact-info text-center flex flex-col gap-3 leading-6">
+                    <h3 class="text-4xl font-extrabold">६२६.४१ करोड</h3>
+                    <p class="text-slate-500">
+                      कुल दावी भुक्तानी रकम
+                    </p>
+                  </div>
+                </div>
 
-                  <div
-                    class="fact-card border flex flex-col items-center justify-center px-8 py-12 text-blue-800 hover:bg-blue-50"
-                  >
-                    <!-- <div
+                <div
+                  class="fact-card border flex flex-col items-center justify-center px-8 py-12 text-blue-800 hover:bg-blue-50">
+                  <!-- <div
                       class="icon w-16 h-16 flex items-center place-content-center mb-4 text-3xl"
                     >
                       <i class="fa-solid fa-face-meh"></i>
                     </div> -->
-                    <div
-                      class="fact-info text-center flex flex-col gap-3 leading-6"
-                    >
-                      <h3 class="text-4xl font-extrabold">७३.०९ करोड</h3>
-                      <p class="text-slate-500">
-                        औषधि उपचार, स्वास्थ्य तथा मातृत्व दावी रकम
-                      </p>
-                    </div>
+                  <div class="fact-info text-center flex flex-col gap-3 leading-6">
+                    <h3 class="text-4xl font-extrabold">७३.०९ करोड</h3>
+                    <p class="text-slate-500">
+                      औषधि उपचार, स्वास्थ्य तथा मातृत्व दावी रकम
+                    </p>
                   </div>
-                  <div
-                    class="fact-card border flex flex-col items-center justify-center px-8 py-12 text-blue-800 hover:bg-blue-50"
-                  >
-                    <!-- <div
+                </div>
+                <div
+                  class="fact-card border flex flex-col items-center justify-center px-8 py-12 text-blue-800 hover:bg-blue-50">
+                  <!-- <div
                       class="icon w-16 h-16 flex items-center place-content-center mb-4 text-3xl"
                     >
                       <i class="fa-solid fa-clipboard-user"></i>
                     </div> -->
-                    <div
-                      class="fact-info text-center flex flex-col gap-3 leading-6"
-                    >
-                      <h3 class="text-4xl font-extrabold">८.५८ करोड</h3>
-                      <p class="text-slate-500">
-                        दुर्घटना तथा अशक्तता सुरक्षा दावी रकम
-                      </p>
-                    </div>
+                  <div class="fact-info text-center flex flex-col gap-3 leading-6">
+                    <h3 class="text-4xl font-extrabold">८.५८ करोड</h3>
+                    <p class="text-slate-500">
+                      दुर्घटना तथा अशक्तता सुरक्षा दावी रकम
+                    </p>
                   </div>
+                </div>
 
-                  <div
-                    class="fact-card border flex flex-col items-center justify-center px-8 py-12 text-blue-800 hover:bg-blue-50"
-                  >
-                    <!-- <div
+                <div
+                  class="fact-card border flex flex-col items-center justify-center px-8 py-12 text-blue-800 hover:bg-blue-50">
+                  <!-- <div
                       class="icon w-16 h-16 flex items-center place-content-center mb-4 text-3xl"
                     >
                       <i class="fa-solid fa-people-group"></i>
                     </div> -->
-                    <div
-                      class="fact-info text-center flex flex-col gap-3 leading-6"
-                    >
-                      <h3 class="text-4xl font-extrabold">१०.५३ करोड</h3>
-                      <p class="text-slate-500">
-                        आश्रित परिवार सुरक्षा दावी रकम
-                      </p>
-                    </div>
+                  <div class="fact-info text-center flex flex-col gap-3 leading-6">
+                    <h3 class="text-4xl font-extrabold">१०.५३ करोड</h3>
+                    <p class="text-slate-500">
+                      आश्रित परिवार सुरक्षा दावी रकम
+                    </p>
                   </div>
-                  <div
-                    class="fact-card border flex flex-col items-center justify-center px-8 py-12 text-blue-800 hover:bg-blue-50"
-                  >
-                    <!-- <div
+                </div>
+                <div
+                  class="fact-card border flex flex-col items-center justify-center px-8 py-12 text-blue-800 hover:bg-blue-50">
+                  <!-- <div
                       class="icon w-16 h-16 flex items-center place-content-center mb-4 text-3xl"
                     >
                       <i class="fa-solid fa-people-group"></i>
                     </div> -->
-                    <div
-                      class="fact-info text-center flex flex-col gap-3 leading-6"
-                    >
-                      <h3 class="text-4xl font-extrabold">५३४.२१ करोड</h3>
-                      <p class="text-slate-500">
-                        अवकाश दावी रकम
-                      </p>
-                    </div>
+                  <div class="fact-info text-center flex flex-col gap-3 leading-6">
+                    <h3 class="text-4xl font-extrabold">५३४.२१ करोड</h3>
+                    <p class="text-slate-500">
+                      अवकाश दावी रकम
+                    </p>
                   </div>
                 </div>
               </div>
-            </section>
-            <section class="sectors-section">
-              <div
-                class="container mx-auto grid gap-6 grid-cols-1 lg:grid-cols-2"
-              >
-                <a
-                  href="#"
-                  class="sector-card p-8 group rounded-md border bg-blue-800 flex flex-col items-start justify-center gap-6 text-white hover:shadow-2xl transition-all"
-                >
-                  <div class="row flex justify-between w-full">
-                    <div
-                      class="icon flex items-center justify-center h-16 w-16 rounded-full bg-white text-blue-800 text-2xl shadow-2xl"
-                    >
-                      <i class="fa-solid fa-user-tie"></i>
-                    </div>
-                    <div
-                      class="icon flex items-center group-hover:bg-white group-hover:text-blue-800 transition-colors justify-center h-16 w-16 rounded-full border border-white text-white text-2xl shadow-2xl"
-                    >
-                      <i class="fa-solid fa-arrow-up rotate-45"></i>
-                    </div>
-                  </div>
-                  <h3 class="text-2xl font-bold">आधिकारीक सेक्टर</h3>
-                  <p class="text-blue-200">
-                    जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
-                    समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
-                  </p>
-                  <!-- <a href="" class="flex items-center gap-2 font-bold hover:gap-3 transition-all"><span class="hover:underline">प्रवेश गर्नुहोस</span><i class="fa-solid fa-arrow-right-long"></i></a> -->
-                </a>
-
-                <a
-                  href="#"
-                  class="sector-card p-8 group rounded-md border bg-blue-800 flex flex-col items-start justify-center gap-6 text-white hover:shadow-2xl transition-all"
-                >
-                  <div class="row flex justify-between w-full">
-                    <div
-                      class="icon flex items-center justify-center h-16 w-16 rounded-full bg-white text-blue-800 text-2xl shadow-2xl"
-                    >
-                      <i class="fa-solid fa-people-arrows"></i>
-                    </div>
-                    <div
-                      class="icon flex items-center group-hover:bg-white group-hover:text-blue-800 transition-colors justify-center h-16 w-16 rounded-full border border-white text-white text-2xl shadow-2xl"
-                    >
-                      <i class="fa-solid fa-arrow-up rotate-45"></i>
-                    </div>
-                  </div>
-                  <h3 class="text-2xl font-bold">अनाधिकारीक सेक्टर</h3>
-                  <p class="text-blue-200">
-                    जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
-                    समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
-                  </p>
-                  <!-- <a href="" class="flex items-center gap-2 font-bold hover:gap-3 transition-all"><span class="hover:underline">प्रवेश गर्नुहोस</span><i class="fa-solid fa-arrow-right-long"></i></a> -->
-                </a>
-
-                <a
-                  href="#"
-                  class="sector-card p-8 group rounded-md border bg-blue-800 flex flex-col items-start justify-center gap-6 text-white hover:shadow-2xl transition-all"
-                >
-                  <div class="row flex justify-between w-full">
-                    <div
-                      class="icon flex items-center justify-center h-16 w-16 rounded-full bg-white text-blue-800 text-2xl shadow-2xl"
-                    >
-                      <i class="fa-solid fa-chalkboard-user"></i>
-                    </div>
-                    <div
-                      class="icon flex items-center group-hover:bg-white group-hover:text-blue-800 transition-colors justify-center h-16 w-16 rounded-full border border-white text-white text-2xl shadow-2xl"
-                    >
-                      <i class="fa-solid fa-arrow-up rotate-45"></i>
-                    </div>
-                  </div>
-                  <h3 class="text-2xl font-bold">स्वरोजगार शाखा</h3>
-                  <p class="text-blue-200">
-                    जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
-                    समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
-                  </p>
-                  <!-- <a href="" class="flex items-center gap-2 font-bold hover:gap-3 transition-all"><span class="hover:underline">प्रवेश गर्नुहोस</span><i class="fa-solid fa-arrow-right-long"></i></a> -->
-                </a>
-
-                <a
-                  href="#"
-                  class="sector-card p-8 group rounded-md border bg-blue-800 flex flex-col items-start justify-center gap-6 text-white hover:shadow-2xl transition-all"
-                >
-                  <div class="row flex justify-between w-full">
-                    <div
-                      class="icon flex items-center justify-center h-16 w-16 rounded-full bg-white text-blue-800 text-2xl shadow-2xl"
-                    >
-                      <i class="fa-solid fa-street-view"></i>
-                    </div>
-                    <div
-                      class="icon flex items-center group-hover:bg-white group-hover:text-blue-800 transition-colors justify-center h-16 w-16 rounded-full border border-white text-white text-2xl shadow-2xl"
-                    >
-                      <i class="fa-solid fa-arrow-up rotate-45"></i>
-                    </div>
-                  </div>
-                  <h3 class="text-2xl font-bold">बसाईसराई विविध</h3>
-                  <p class="text-blue-200">
-                    जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
-                    समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
-                  </p>
-                  <!-- <a href="" class="flex items-center gap-2 font-bold hover:gap-3 transition-all"><span class="hover:underline">प्रवेश गर्नुहोस</span><i class="fa-solid fa-arrow-right-long"></i></a> -->
-                </a>
-              </div>
-            </section>
-            <section class="display-section py-24 overflow-hidden">
-              <div
-                class="container mx-auto px-4 w-full flex gap-24 md:gap-16 flex-wrap-reverse justify-start lg:justify-center items-center"
-              >
-                <div
-                  class="display-left w-10/12 md:w-5/12 lg:w-5/12 flex flex-col flex-wrap gap-4"
-                >
+            </div>
+          </section>
+          <section class="sectors-section">
+            <div class="container mx-auto grid gap-6 grid-cols-1 lg:grid-cols-2">
+              <a href="#"
+                class="sector-card p-8 group rounded-md border text-black flex flex-col items-start justify-center gap-6 text-white hover:shadow-2xl transition-all">
+                <div class="row flex w-full relative">
                   <div
-                    class="line h-[1px] w-40 bg-blue-500 flex items-center justify-center rounded-full"
-                  >
-                    <p class="text-blue-500 p-1 bg-white">सामाजिक सुरक्षा एप</p>
+                    class="icon flex items-center justify-center h-16 w-16 rounded-full bg-white text-blue-800 text-2xl shadow-2xl overflow-hidden">
+
+                    <img src="assets/images/man.jpg" class="object-cover transform scale-150" alt="">
+                    <!-- <i class="fa-solid fa-user-tie"></i> -->
                   </div>
-                  <h1 class="text-5xl font-extrabold text-blue-800 leading-normal">
-                    सामाजिक सुरक्षा कोष एप डाउनलोड गर्नुभयो त?
-                  </h1>
-                  <p class="text-slate-500 leading-relaxed">
-                    मोबाइल एप बाट विशेष सापटीको लागि निवेदन दिने तरिका तथा योगदानकर्ता
-                    सापटी निर्देशिका २०७९ वमोजिम कोषवाट प्रवाह हुने सापटी विशेष सापटीको
-                    लागि निवेदन दिने तरिका
-                  </p>
-                  <div class="display-ctas flex gap-4 mt-8 transition-border">
-                    <a href="" class="w-40">
-                      <img
-                        src="./assets/images/download-btn-playstore.png"
-                        alt=""
-                        class="app-img w-full hover:border-2 border-blue-900 rounded-md"
-                      />
-                    </a>
-                    <a href="" class="w-40">
-                      <img
-                        src="./assets/images/download-btn-appstore.png"
-                        alt=""
-                        class="app-img w-full hover:border-2 border-blue-900 rounded-md"
-                      />
-                    </a>
+                  <h3 class="text-lg md:text-2xl lg:text-2xl xl:text-2xl font-bold relative top-4 ml-3">आधिकारीक सेक्टर</h3>
+                  <div
+                    class="justify-self-end icon flex items-center group-hover:bg-white  text-blue-800 transition-colors justify-center h-16 w-16 rounded-full border border-white text-2xl shadow-2xl absolute right-0">
+                    <i class="fa-solid fa-arrow-up rotate-45"></i>
                   </div>
                 </div>
-                <div
-                  class="display-right w-6/10 md:w-5/12 lg:8/12 flex justify-center items-center relative"
-                >
-                  <div class="dispaly-img w-8/12 lg:w-6/12">
-                    <img
-                      src="./assets/images/app-banner.png"
-                      alt=""
-                      class="w-full object-cover object-center"
-                    />
+                
+                <p class="">
+                  जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
+                  समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
+                </p>
+
+                <p class="">
+                  सेवा सुबिदा सर्त हरु 
+                </p>
+
+                <div class="flex flex-wrap space-between">
+                  <div class="sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 my-3 flex">
+                    <img src="assets/images/man.jpg" class="h-8" alt="">
+                    <p class="ml-2">Sub Heading</p>
+                  </div>
+                  <div class="flex sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 my-3">
+                    <img src="assets/images/man.jpg" class="h-8" alt="">
+                    <p class="ml-2">Sub Heading</p>
+                  </div>
+                  <div class="flex sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 my-3">
+                    <img src="assets/images/man.jpg" class="h-8" alt="">
+                    <p class="ml-2">Sub Heading</p>
+                  </div>
+                  <div class="flex sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 my-3">
+                    <img src="assets/images/man.jpg" class="h-8" alt="">
+                    <p class="ml-2">Sub Heading</p>
+                  </div>
+                  <div class="flex sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 my-3">
+                    <img src="assets/images/man.jpg" class="h-8" alt="">
+                    <p class="ml-2">Sub Heading</p>
+                  </div>
+                  <div class="flex sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 my-3">
+                    <img src="assets/images/man.jpg" class="h-8" alt="">
+                    <p class="ml-2">Sub Heading</p>
+                  </div>
+                </div>
+
+                <!-- <a href="" class="flex items-center gap-2 font-bold hover:gap-3 transition-all"><span class="hover:underline">प्रवेश गर्नुहोस</span><i class="fa-solid fa-arrow-right-long"></i></a> -->
+              </a>
+
+              <a href="#"
+                class="sector-card p-8 group rounded-md border bg-blue-800 flex flex-col items-start justify-center gap-6 text-white hover:shadow-2xl transition-all">
+                <div class="row flex justify-between w-full">
+                  <div
+                    class="icon flex items-center justify-center h-16 w-16 rounded-full bg-white text-blue-800 text-2xl shadow-2xl">
+                    <i class="fa-solid fa-user-tie"></i>
                   </div>
                   <div
-                    class="graphics absolute flex justify-center items-center z-[-1] left-0 right-0 top-0 bottom-0"
-                  >
-                    <img
-                      src="./assets/images/display-graphics.svg"
-                      class="w-10/12 md:w-6/12"
-                      alt=""
-                    />
+                    class="icon flex items-center group-hover:bg-white group-hover:text-blue-800 transition-colors justify-center h-16 w-16 rounded-full border border-white text-white text-2xl shadow-2xl">
+                    <i class="fa-solid fa-arrow-up rotate-45"></i>
                   </div>
                 </div>
-              </section>
-              
-            </section>
+                <h3 class="text-2xl font-bold">आधिकारीक सेक्टर</h3>
+                <p class="text-blue-200">
+                  जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
+                  समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
+                </p>
+                <!-- <a href="" class="flex items-center gap-2 font-bold hover:gap-3 transition-all"><span class="hover:underline">प्रवेश गर्नुहोस</span><i class="fa-solid fa-arrow-right-long"></i></a> -->
+              </a>
 
-          <section
-            class="right-section h-fit col-span-5 md:col-span-6 lg:col-span-1 grid items-start grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6"
-          >
-            <li
-              class="flex flex-col text-center bg-white rounded-md shadow divide-y divide-gray-200 h-full"
-            >
-              <div class="flex-1 flex flex-col p-6">
-                <img
-                  class="w-32 h-32 flex-shrink-0 mx-auto rounded-full border object-contain"
-                  src="https://ssf.gov.np/images/board_members/mr_1686721299.jpg"
-                  alt=""
-                />
+              <a href="#"
+                class="sector-card p-8 group rounded-md border bg-blue-800 flex flex-col items-start justify-center gap-6 text-white hover:shadow-2xl transition-all">
+                <div class="row flex justify-between w-full">
+                  <div
+                    class="icon flex items-center justify-center h-16 w-16 rounded-full bg-white text-blue-800 text-2xl shadow-2xl">
+                    <i class="fa-solid fa-people-arrows"></i>
+                  </div>
+                  <div
+                    class="icon flex items-center group-hover:bg-white group-hover:text-blue-800 transition-colors justify-center h-16 w-16 rounded-full border border-white text-white text-2xl shadow-2xl">
+                    <i class="fa-solid fa-arrow-up rotate-45"></i>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-bold">अनाधिकारीक सेक्टर</h3>
+                <p class="text-blue-200">
+                  जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
+                  समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
+                </p>
+                <!-- <a href="" class="flex items-center gap-2 font-bold hover:gap-3 transition-all"><span class="hover:underline">प्रवेश गर्नुहोस</span><i class="fa-solid fa-arrow-right-long"></i></a> -->
+              </a>
 
-                <h3 class="mt-6 text-blue-800 text-lg font-bold">
-                  श्री केवल प्रसाद भण्डारी
-                </h3>
-                <dl class="mt-1 flex-grow flex flex-col gap-3 justify-between">
-                  <dt class="sr-only">Role</dt>
-                  <dd class="">
-                    <span
-                      class="px-2 py-1 text-slate-500 text-xs font-medium bg-blue-50 rounded-full"
-                      >अध्यक्ष</span
-                    >
-                  </dd>
+              <a href="#"
+                class="sector-card p-8 group rounded-md border bg-blue-800 flex flex-col items-start justify-center gap-6 text-white hover:shadow-2xl transition-all">
+                <div class="row flex justify-between w-full">
+                  <div
+                    class="icon flex items-center justify-center h-16 w-16 rounded-full bg-white text-blue-800 text-2xl shadow-2xl">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                  </div>
+                  <div
+                    class="icon flex items-center group-hover:bg-white group-hover:text-blue-800 transition-colors justify-center h-16 w-16 rounded-full border border-white text-white text-2xl shadow-2xl">
+                    <i class="fa-solid fa-arrow-up rotate-45"></i>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-bold">स्वरोजगार शाखा</h3>
+                <p class="text-blue-200">
+                  जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
+                  समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
+                </p>
+                <!-- <a href="" class="flex items-center gap-2 font-bold hover:gap-3 transition-all"><span class="hover:underline">प्रवेश गर्नुहोस</span><i class="fa-solid fa-arrow-right-long"></i></a> -->
+              </a>
 
-                  <dt class="sr-only">Title</dt>
-                  <dd class="text-slate-500">
-                    सचिव- श्रम, रोजगार तथा सामाजिक सुरक्षा मन्त्रालय
-                  </dd>
-                </dl>
+              <a href="#"
+                class="sector-card p-8 group rounded-md border bg-blue-800 flex flex-col items-start justify-center gap-6 text-white hover:shadow-2xl transition-all">
+                <div class="row flex justify-between w-full">
+                  <div
+                    class="icon flex items-center justify-center h-16 w-16 rounded-full bg-white text-blue-800 text-2xl shadow-2xl">
+                    <i class="fa-solid fa-street-view"></i>
+                  </div>
+                  <div
+                    class="icon flex items-center group-hover:bg-white group-hover:text-blue-800 transition-colors justify-center h-16 w-16 rounded-full border border-white text-white text-2xl shadow-2xl">
+                    <i class="fa-solid fa-arrow-up rotate-45"></i>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-bold">बसाईसराई विविध</h3>
+                <p class="text-blue-200">
+                  जनसंख्या डडेल्धुरा जिल्लाको सदरमुकाम वरपरका ५ गाउँ विकास
+                  समितिहरु (डोटी घटाल, सहस्रलिङ्ग, खलङ्गा,उग्रतारा र भुमिराज)
+                </p>
+                <!-- <a href="" class="flex items-center gap-2 font-bold hover:gap-3 transition-all"><span class="hover:underline">प्रवेश गर्नुहोस</span><i class="fa-solid fa-arrow-right-long"></i></a> -->
+              </a>
+            </div>
+          </section>
+          <section class="display-section py-24 overflow-hidden">
+            <div
+              class="container mx-auto px-4 w-full flex gap-24 md:gap-16 flex-wrap-reverse justify-start lg:justify-center items-center">
+              <div class="display-left w-10/12 md:w-5/12 lg:w-5/12 flex flex-col flex-wrap gap-4">
+                <div class="line h-[1px] w-40 bg-blue-500 flex items-center justify-center rounded-full">
+                  <p class="text-blue-500 p-1 bg-white">सामाजिक सुरक्षा एप</p>
+                </div>
+                <h1 class="text-5xl font-extrabold text-blue-800 leading-normal">
+                  सामाजिक सुरक्षा कोष एप डाउनलोड गर्नुभयो त?
+                </h1>
+                <p class="text-slate-500 leading-relaxed">
+                  मोबाइल एप बाट विशेष सापटीको लागि निवेदन दिने तरिका तथा योगदानकर्ता
+                  सापटी निर्देशिका २०७९ वमोजिम कोषवाट प्रवाह हुने सापटी विशेष सापटीको
+                  लागि निवेदन दिने तरिका
+                </p>
+                <div class="display-ctas flex gap-4 mt-8 transition-border">
+                  <a href="" class="w-40">
+                    <img src="./assets/images/download-btn-playstore.png" alt=""
+                      class="app-img w-full hover:border-2 border-blue-900 rounded-md" />
+                  </a>
+                  <a href="" class="w-40">
+                    <img src="./assets/images/download-btn-appstore.png" alt=""
+                      class="app-img w-full hover:border-2 border-blue-900 rounded-md" />
+                  </a>
+                </div>
               </div>
-            </li>
-            <li
-              class="flex flex-col text-center bg-white rounded-md shadow divide-y divide-gray-200 h-full"
-            >
-              <div class="flex-1 flex flex-col p-6">
-                <img
-                  class="w-32 h-32 flex-shrink-0 mx-auto rounded-full border object-contain"
-                  src="https://ssf.gov.np/images/staffs/mr-kabi-raj-adhikari_1695970218.jpg"
-                  alt=""
-                />
-                <h3 class="mt-6 text-blue-800 text-lg font-bold">
-                  श्री कविराज अधिकारी
-                </h3>
-                <dl class="mt-1 flex-grow flex flex-col gap-3 justify-between">
-                  <dt class="sr-only">Role</dt>
-                  <dd class="">
-                    <span
-                      class="px-2 py-1 text-slate-500 text-xs font-medium bg-blue-50 rounded-full"
-                      >कार्यकारी निर्देशक</span
-                    >
-                  </dd>
-                  <dl class="flex-grow flex flex-col gap-3 justify-between">
-                    <dt class="sr-only">Email</dt>
-                    <dd class="">
-                      <span
-                        class="px-2 py-1 text-slate-500 text-xs font-medium "
-                        >ed@ssf.gov.np</span
-                      >
-                    </dd>
-                  </dl>
-                </dl>
+              <div class="display-right w-6/10 md:w-5/12 lg:8/12 flex justify-center items-center relative">
+                <div class="dispaly-img w-8/12 lg:w-6/12">
+                  <img src="./assets/images/app-banner.png" alt="" class="w-full object-cover object-center" />
+                </div>
+                <div class="graphics absolute flex justify-center items-center z-[-1] left-0 right-0 top-0 bottom-0">
+                  <img src="./assets/images/display-graphics.svg" class="w-10/12 md:w-6/12" alt="" />
+                </div>
               </div>
-            </li>
-            <li
-              class="flex flex-col text-center bg-white rounded-md shadow divide-y divide-gray-200 h-full"
-            >
-              <div class="flex-1 flex flex-col p-6">
-                <img
-                  class="w-32 h-32 flex-shrink-0 mx-auto rounded-full border object-contain"
-                  src="https://ssf.gov.np/images/staffs/bibek-panthee_1695979264.jpg"
-                  alt=""
-                />
-                <h3 class="mt-6 text-blue-800 text-lg font-bold">
-                  बिबेक पन्थी
-                </h3>
-                <dl class="mt-1 flex-grow flex flex-col gap-3 justify-between">
-                  <dt class="sr-only">Role</dt>
-                  <dd class="">
-                    <span
-                      class="px-2 py-1 text-slate-500 text-sm font-medium bg-blue-50 rounded-full"
-                      >प्रवक्ता</span
-                    >
-                  </dd>
-                </dl>
-                <dl class="flex-grow flex flex-col gap-3 justify-between">
-                  <dt class="sr-only">Mobile</dt>
-                  <dd class="">
-                    <span
-                      class="px-2 py-1 text-slate-500 text-sm font-medium "
-                      >९८५१२१७८९२</span
-                    >
-                  </dd>
-                </dl>
+          </section>
+
+        </section>
+
+        <section
+          class="right-section h-fit col-span-5 md:col-span-6 lg:col-span-1 grid items-start grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
+          <li class="flex flex-col text-center bg-white rounded-md shadow divide-y divide-gray-200 h-full">
+            <div class="flex-1 flex flex-col p-6">
+              <img class="w-32 h-32 flex-shrink-0 mx-auto rounded-full border object-contain"
+                src="https://ssf.gov.np/images/board_members/mr_1686721299.jpg" alt="" />
+
+              <h3 class="mt-6 text-blue-800 text-lg font-bold">
+                श्री केवल प्रसाद भण्डारी
+              </h3>
+              <dl class="mt-1 flex-grow flex flex-col gap-3 justify-between">
+                <dt class="sr-only">Role</dt>
+                <dd class="">
+                  <span class="px-2 py-1 text-slate-500 text-xs font-medium bg-blue-50 rounded-full">अध्यक्ष</span>
+                </dd>
+
+                <dt class="sr-only">Title</dt>
+                <dd class="text-slate-500">
+                  सचिव- श्रम, रोजगार तथा सामाजिक सुरक्षा मन्त्रालय
+                </dd>
+              </dl>
+            </div>
+          </li>
+          <li class="flex flex-col text-center bg-white rounded-md shadow divide-y divide-gray-200 h-full">
+            <div class="flex-1 flex flex-col p-6">
+              <img class="w-32 h-32 flex-shrink-0 mx-auto rounded-full border object-contain"
+                src="https://ssf.gov.np/images/staffs/mr-kabi-raj-adhikari_1695970218.jpg" alt="" />
+              <h3 class="mt-6 text-blue-800 text-lg font-bold">
+                श्री कविराज अधिकारी
+              </h3>
+              <dl class="mt-1 flex-grow flex flex-col gap-3 justify-between">
+                <dt class="sr-only">Role</dt>
+                <dd class="">
+                  <span class="px-2 py-1 text-slate-500 text-xs font-medium bg-blue-50 rounded-full">कार्यकारी
+                    निर्देशक</span>
+                </dd>
                 <dl class="flex-grow flex flex-col gap-3 justify-between">
                   <dt class="sr-only">Email</dt>
                   <dd class="">
-                    <span
-                      class="px-2 py-1 text-slate-500 text-sm font-medium "
-                      >bibekpanthee@ssf.gov.np</span
-                    >
+                    <span class="px-2 py-1 text-slate-500 text-xs font-medium ">ed@ssf.gov.np</span>
                   </dd>
                 </dl>
-              </div>
-            </li>
-            <li
-              class="flex flex-col text-center bg-white rounded-md shadow divide-y divide-gray-200 h-full"
-            >
-              <div class="flex-1 flex flex-col p-6">
-                <img
-                  class="w-32 h-32 flex-shrink-0 mx-auto rounded-full border object-contain"
-                  src="https://ssf.gov.np/images/staffs/uttam-raj-nepal_1695979108.jpg"
-                  alt=""
-                />
-                <h3 class="mt-6 text-blue-800 text-lg font-bold">
-                  उत्तमराज नेपाल
-                </h3>
-                <dl class="mt-1 flex-grow flex flex-col gap-3 justify-between">
-                  <dt class="sr-only">Role</dt>
-                  <dd class="">
-                    <span
-                      class="px-2 py-1 text-slate-500 text-sm font-medium bg-blue-50 rounded-full"
-                      >सुचना अधिकारी</span
-                    >
-                  </dd>
-                </dl>
-                <dl class="flex-grow flex flex-col gap-3 justify-between">
-                  <dt class="sr-only">Mobile</dt>
-                  <dd class="">
-                    <span
-                      class="px-2 py-1 text-slate-500 text-sm font-medium "
-                      >९८५१३२१०९४</span
-                    >
-                  </dd>
-                </dl>
-                <dl class="flex-grow flex flex-col gap-3 justify-between">
-                  <dt class="sr-only">Email</dt>
-                  <dd class="">
-                    <span
-                      class="px-2 py-1 text-slate-500 text-sm font-medium "
-                      >suchana@ssf.gov.np</span
-                    >
-                  </dd>
-                </dl>
-              </div>
-            </li>
-            <li
-              class="flex flex-col text-center bg-white rounded-md shadow divide-y divide-gray-200 h-full"
-            >
-              <div class="flex-1 flex flex-col p-6">
-                <img
-                  class="w-32 h-32 flex-shrink-0 mx-auto rounded-full border object-contain"
-                  src="https://ssf.gov.np/images/staffs/rohit-regmi_1695979208.jpg"
-                  alt=""
-                />
-                <h3 class="mt-6 text-blue-800 text-lg font-bold">
-                  रोहित रेग्मी
-                </h3>
-                <dl class="mt-1 flex-grow flex flex-col gap-3 justify-between">
-                  <dt class="sr-only">Role</dt>
-                  <dd class="">
-                    <span
-                      class="px-2 py-1 text-slate-500 text-sm font-medium bg-blue-50 rounded-full"
-                      >सह-प्रवक्ता</span
-                    >
-                  </dd>
-                </dl>
-                <dl class="flex-grow flex flex-col gap-3 justify-between">
-                  <dt class="sr-only">Mobile</dt>
-                  <dd class="">
-                    <span
-                      class="px-2 py-1 text-slate-500 text-sm font-medium "
-                      >९८५११९८८९८</span
-                    >
-                  </dd>
-                </dl>
-                <dl class="flex-grow flex flex-col gap-3 justify-between">
-                  <dt class="sr-only">Email</dt>
-                  <dd class="">
-                    <span
-                      class="px-2 py-1 text-slate-500 text-sm font-medium "
-                      >rohitregmi@ssf.gov.np</span
-                    >
-                  </dd>
-                </dl>
-              </div>
-            </li>
-            <li
-              class="flex flex-col text-center bg-white rounded-md shadow divide-y divide-gray-200 h-full"
-            >
-              <div class="flex-1 flex flex-col p-6">
-                <img
-                  class="w-32 h-32 flex-shrink-0 mx-auto rounded-full border object-contain"
-                  src="https://ssf.gov.np/images/staffs/prem-bahadur-mahat_1695979335.jpg"
-                  alt=""
-                />
-                <h3 class="mt-6 text-blue-800 text-lg font-bold">
-                  प्रेम बहादुर मगत
-                </h3>
-                <dl class="mt-1 flex-grow flex flex-col gap-3 justify-between">
-                  <dt class="sr-only">Role</dt>
-                  <dd class="">
-                    <span
-                      class="px-2 py-1 text-slate-500 text-sm font-medium bg-blue-50 rounded-full"
-                      >गुनासो सुन्ने अधिकारी</span
-                    >
-                  </dd>
-                </dl>
-                <dl class="flex-grow flex flex-col gap-3 justify-between">
-                  <dt class="sr-only">Mobile</dt>
-                  <dd class="">
-                    <span
-                      class="px-2 py-1 text-slate-500 text-sm font-medium "
-                      >९८५११६१९७२</span
-                    >
-                  </dd>
-                </dl>
-                <dl class="flex-grow flex flex-col gap-3 justify-between">
-                  <dt class="sr-only">Email</dt>
-                  <dd class="">
-                    <span
-                      class="px-2 py-1 text-slate-500 text-sm font-medium "
-                      >gunaso@ssf.gov.np</span
-                    >
-                  </dd>
-                </dl>
-              </div>
-            </li>
-        </div>
+              </dl>
+            </div>
+          </li>
+          <li class="flex flex-col text-center bg-white rounded-md shadow divide-y divide-gray-200 h-full">
+            <div class="flex-1 flex flex-col p-6">
+              <img class="w-32 h-32 flex-shrink-0 mx-auto rounded-full border object-contain"
+                src="https://ssf.gov.np/images/staffs/bibek-panthee_1695979264.jpg" alt="" />
+              <h3 class="mt-6 text-blue-800 text-lg font-bold">
+                बिबेक पन्थी
+              </h3>
+              <dl class="mt-1 flex-grow flex flex-col gap-3 justify-between">
+                <dt class="sr-only">Role</dt>
+                <dd class="">
+                  <span class="px-2 py-1 text-slate-500 text-sm font-medium bg-blue-50 rounded-full">प्रवक्ता</span>
+                </dd>
+              </dl>
+              <dl class="flex-grow flex flex-col gap-3 justify-between">
+                <dt class="sr-only">Mobile</dt>
+                <dd class="">
+                  <span class="px-2 py-1 text-slate-500 text-sm font-medium ">९८५१२१७८९२</span>
+                </dd>
+              </dl>
+              <dl class="flex-grow flex flex-col gap-3 justify-between">
+                <dt class="sr-only">Email</dt>
+                <dd class="">
+                  <span class="px-2 py-1 text-slate-500 text-sm font-medium ">bibekpanthee@ssf.gov.np</span>
+                </dd>
+              </dl>
+            </div>
+          </li>
+          <li class="flex flex-col text-center bg-white rounded-md shadow divide-y divide-gray-200 h-full">
+            <div class="flex-1 flex flex-col p-6">
+              <img class="w-32 h-32 flex-shrink-0 mx-auto rounded-full border object-contain"
+                src="https://ssf.gov.np/images/staffs/uttam-raj-nepal_1695979108.jpg" alt="" />
+              <h3 class="mt-6 text-blue-800 text-lg font-bold">
+                उत्तमराज नेपाल
+              </h3>
+              <dl class="mt-1 flex-grow flex flex-col gap-3 justify-between">
+                <dt class="sr-only">Role</dt>
+                <dd class="">
+                  <span class="px-2 py-1 text-slate-500 text-sm font-medium bg-blue-50 rounded-full">सुचना
+                    अधिकारी</span>
+                </dd>
+              </dl>
+              <dl class="flex-grow flex flex-col gap-3 justify-between">
+                <dt class="sr-only">Mobile</dt>
+                <dd class="">
+                  <span class="px-2 py-1 text-slate-500 text-sm font-medium ">९८५१३२१०९४</span>
+                </dd>
+              </dl>
+              <dl class="flex-grow flex flex-col gap-3 justify-between">
+                <dt class="sr-only">Email</dt>
+                <dd class="">
+                  <span class="px-2 py-1 text-slate-500 text-sm font-medium ">suchana@ssf.gov.np</span>
+                </dd>
+              </dl>
+            </div>
+          </li>
+          <li class="flex flex-col text-center bg-white rounded-md shadow divide-y divide-gray-200 h-full">
+            <div class="flex-1 flex flex-col p-6">
+              <img class="w-32 h-32 flex-shrink-0 mx-auto rounded-full border object-contain"
+                src="https://ssf.gov.np/images/staffs/rohit-regmi_1695979208.jpg" alt="" />
+              <h3 class="mt-6 text-blue-800 text-lg font-bold">
+                रोहित रेग्मी
+              </h3>
+              <dl class="mt-1 flex-grow flex flex-col gap-3 justify-between">
+                <dt class="sr-only">Role</dt>
+                <dd class="">
+                  <span class="px-2 py-1 text-slate-500 text-sm font-medium bg-blue-50 rounded-full">सह-प्रवक्ता</span>
+                </dd>
+              </dl>
+              <dl class="flex-grow flex flex-col gap-3 justify-between">
+                <dt class="sr-only">Mobile</dt>
+                <dd class="">
+                  <span class="px-2 py-1 text-slate-500 text-sm font-medium ">९८५११९८८९८</span>
+                </dd>
+              </dl>
+              <dl class="flex-grow flex flex-col gap-3 justify-between">
+                <dt class="sr-only">Email</dt>
+                <dd class="">
+                  <span class="px-2 py-1 text-slate-500 text-sm font-medium ">rohitregmi@ssf.gov.np</span>
+                </dd>
+              </dl>
+            </div>
+          </li>
+          <li class="flex flex-col text-center bg-white rounded-md shadow divide-y divide-gray-200 h-full">
+            <div class="flex-1 flex flex-col p-6">
+              <img class="w-32 h-32 flex-shrink-0 mx-auto rounded-full border object-contain"
+                src="https://ssf.gov.np/images/staffs/prem-bahadur-mahat_1695979335.jpg" alt="" />
+              <h3 class="mt-6 text-blue-800 text-lg font-bold">
+                प्रेम बहादुर मगत
+              </h3>
+              <dl class="mt-1 flex-grow flex flex-col gap-3 justify-between">
+                <dt class="sr-only">Role</dt>
+                <dd class="">
+                  <span class="px-2 py-1 text-slate-500 text-sm font-medium bg-blue-50 rounded-full">गुनासो सुन्ने
+                    अधिकारी</span>
+                </dd>
+              </dl>
+              <dl class="flex-grow flex flex-col gap-3 justify-between">
+                <dt class="sr-only">Mobile</dt>
+                <dd class="">
+                  <span class="px-2 py-1 text-slate-500 text-sm font-medium ">९८५११६१९७२</span>
+                </dd>
+              </dl>
+              <dl class="flex-grow flex flex-col gap-3 justify-between">
+                <dt class="sr-only">Email</dt>
+                <dd class="">
+                  <span class="px-2 py-1 text-slate-500 text-sm font-medium ">gunaso@ssf.gov.np</span>
+                </dd>
+              </dl>
+            </div>
+          </li>
       </div>
-    </section>
-    <footer
-      class="bg-blue-950 flex flex-col gap-10 pt-16 md:pt-24 px-4 mt-8 overflow-hidden"
-    >
-      <div
-        class="container mx-auto grid gap-16 justify-between grid-cols-1 md:grid-cols-3 lg:grid-cols-10"
-      >
-        <div class="footer-item flex flex-col items-start gap-8 col-span-3">
-          <img
-            src="./assets/images/ssf-logo.png"
-            alt=""
-            class="bg-blue-50 rounded-full p-1 h-12 object-cover object-center"
-          />
-          <p class="text-slate-400 leading-relaxed">
-            मोबाइल एप बाट विशेष सापटीको लागि निवेदन दिने तरिका तथा योगदानकर्ता
-            सापटी निर्देशिका २०७९ वमोजिम कोषवाट प्रवाह हुने सापटी विशेष सापटीको
-            लागि निवेदन दिने तरिका सापटी निर्देशिका २०७९ वमोजिम कोषवाट प्रवाह
-            हुने सापटी विशेष सापटीको लागि निवेदन दिने तरिका
-          </p>
-          <div class="social-icons flex gap-4 items-center">
-            <a
-              href=""
-              class="border border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-blue-950"
-              >थप पढ्नुहोस्</a
-            >
-            <a
-              href=""
-              class="bg-blue-50 w-10 h-10 rounded-full flex justify-center items-center text-blue-800 hover:text-blue-700 transition-colors duration-400"
-            >
-              <i class="fa-brands fa-facebook text-xl"></i>
-            </a>
-
-            <a
-              href=""
-              class="bg-blue-50 w-10 h-10 rounded-full flex justify-center items-center text-blue-800 hover:text-blue-700 transition-colors duration-400"
-            >
-              <i class="fa-brands fa-youtube text-xl"></i>
-            </a>
-            <a
-              href=""
-              class="bg-blue-50 w-10 h-10 rounded-full flex justify-center items-center text-blue-800 hover:text-blue-700 transition-colors duration-400"
-            >
-              <i class="fa-brands fa-x-twitter text-xl"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="footer-item flex flex-col gap-4 col-span-3">
-          <h2 class="text-blue-50 font-bold text-lg">सम्पर्क</h2>
-          <ul
-            class="footer-links flex flex-col gap-3 list-disc text-slate-400 pl-4"
-          >
-            <li>
-              <a href="" class="text-slate-400 hover:text-slate-200"
-                >सामान्य जानकारी तथा समस्या समाधानका लागि : टोल फ्री नं. १११६
-                (NTC बाट मात्र ) ०१-५९७००१६ (NTC/NCELL)</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-slate-400 hover:text-slate-200"
-                >KYC र स्वराेजगार सूचीकरणको लागि: ९८५१३४५८१५</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-slate-400 hover:text-slate-200"
-                >योगदानकर्ता सापटी : ०१-५३६०८३७ ext. ३०६</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-slate-400 hover:text-slate-200"
-                >हिसाब मिलानका लागि : ९८५१३४२२७३</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-slate-400 hover:text-slate-200"
-                >मेडिकल दाबी भुक्तानी सम्बन्धी: ०१-५३५५४४०</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-slate-400 hover:text-slate-200"
-                >अवकाश दावी भुक्तानीकाे लागि : ०१५३६०८५१, ext. ४०५</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-slate-400 hover:text-slate-200"
-                >बैदेशिक राेजगारीमा रहनु हुने याेगदानकर्ताकाे लागि ( For Whats
-                App and Viber) : ९८५१३५१७५४, migrantworker@ssf.gov.np</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-slate-400 hover:text-slate-200"
-                >सूचीकरण सम्बन्धी: ०१-५३६०८२५
-              </a>
-            </li>
-            <li>
-              <a href="" class="text-slate-400 hover:text-slate-200"
-                >कार्यालयको फोन नं.: ०१-५३५६३१५, ०१-५३६०८५१
-              </a>
-            </li>
-            <li>
-              <a href="" class="text-slate-400 hover:text-slate-200"
-                >पोष्ट बक्स नं. : ३३३
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer-item flex flex-col col-span-3 gap-4">
-          <h2 class="text-white text-lg font-bold">ईमेलहरु</h2>
-          <div class="contact-items flex flex-col gap-3">
-            <div
-              class="contact-item text-slate-400 hover:text-slate-200 flex items-center gap-2 cursor-pointer"
-            >
-              <i class="fa-solid fa-location-dot"></i>
-              <p>Location I, Street No. 734</p>
-            </div>
-            <div
-              class="contact-item text-slate-400 hover:text-slate-200 flex items-center gap-2 cursor-pointer"
-            >
-              <i class="fa-solid fa-phone"></i>
-              <p>+977 XXX-XXX-XXX</p>
-            </div>
-            <div
-              class="contact-item text-slate-400 hover:text-slate-200 flex items-center gap-2 cursor-pointer"
-            >
-              <i class="fa-solid fa-envelope"></i>
-              <p>abc@gmail.com</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container mx-auto h-px w-full bg-slate-600 mt-1"></div>
-      <div class="container flex justify-between mx-auto pb-10">
-        <p class="text-slate-400">© Social Security Fund 2023</p>
-        <p class="text-slate-400">
-          Developed by:
-          <a href="" class="hover:text-slate-200">Virtual Technology</a>
+    </div>
+  </section>
+  <footer class="bg-blue-950 flex flex-col gap-10 pt-16 md:pt-24 px-4 mt-8 overflow-hidden">
+    <div class="container mx-auto grid gap-16 justify-between grid-cols-1 md:grid-cols-3 lg:grid-cols-10">
+      <div class="footer-item flex flex-col items-start gap-8 col-span-3">
+        <img src="./assets/images/ssf-logo.png" alt=""
+          class="bg-blue-50 rounded-full p-1 h-12 object-cover object-center" />
+        <p class="text-slate-400 leading-relaxed">
+          मोबाइल एप बाट विशेष सापटीको लागि निवेदन दिने तरिका तथा योगदानकर्ता
+          सापटी निर्देशिका २०७९ वमोजिम कोषवाट प्रवाह हुने सापटी विशेष सापटीको
+          लागि निवेदन दिने तरिका सापटी निर्देशिका २०७९ वमोजिम कोषवाट प्रवाह
+          हुने सापटी विशेष सापटीको लागि निवेदन दिने तरिका
         </p>
-      </div>
-    </footer>
+        <div class="social-icons flex gap-4 items-center">
+          <a href="" class="border border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-blue-950">थप
+            पढ्नुहोस्</a>
+          <a href=""
+            class="bg-blue-50 w-10 h-10 rounded-full flex justify-center items-center text-blue-800 hover:text-blue-700 transition-colors duration-400">
+            <i class="fa-brands fa-facebook text-xl"></i>
+          </a>
 
-    <!-- <section class="notice-section  bg-blue-50 pb-24">
+          <a href=""
+            class="bg-blue-50 w-10 h-10 rounded-full flex justify-center items-center text-blue-800 hover:text-blue-700 transition-colors duration-400">
+            <i class="fa-brands fa-youtube text-xl"></i>
+          </a>
+          <a href=""
+            class="bg-blue-50 w-10 h-10 rounded-full flex justify-center items-center text-blue-800 hover:text-blue-700 transition-colors duration-400">
+            <i class="fa-brands fa-x-twitter text-xl"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-item flex flex-col gap-4 col-span-3">
+        <h2 class="text-blue-50 font-bold text-lg">सम्पर्क</h2>
+        <ul class="footer-links flex flex-col gap-3 list-disc text-slate-400 pl-4">
+          <li>
+            <a href="" class="text-slate-400 hover:text-slate-200">सामान्य जानकारी तथा समस्या समाधानका लागि : टोल फ्री
+              नं. १११६
+              (NTC बाट मात्र ) ०१-५९७००१६ (NTC/NCELL)</a>
+          </li>
+          <li>
+            <a href="" class="text-slate-400 hover:text-slate-200">KYC र स्वराेजगार सूचीकरणको लागि: ९८५१३४५८१५</a>
+          </li>
+          <li>
+            <a href="" class="text-slate-400 hover:text-slate-200">योगदानकर्ता सापटी : ०१-५३६०८३७ ext. ३०६</a>
+          </li>
+          <li>
+            <a href="" class="text-slate-400 hover:text-slate-200">हिसाब मिलानका लागि : ९८५१३४२२७३</a>
+          </li>
+          <li>
+            <a href="" class="text-slate-400 hover:text-slate-200">मेडिकल दाबी भुक्तानी सम्बन्धी: ०१-५३५५४४०</a>
+          </li>
+          <li>
+            <a href="" class="text-slate-400 hover:text-slate-200">अवकाश दावी भुक्तानीकाे लागि : ०१५३६०८५१, ext. ४०५</a>
+          </li>
+          <li>
+            <a href="" class="text-slate-400 hover:text-slate-200">बैदेशिक राेजगारीमा रहनु हुने याेगदानकर्ताकाे लागि (
+              For Whats
+              App and Viber) : ९८५१३५१७५४, migrantworker@ssf.gov.np</a>
+          </li>
+          <li>
+            <a href="" class="text-slate-400 hover:text-slate-200">सूचीकरण सम्बन्धी: ०१-५३६०८२५
+            </a>
+          </li>
+          <li>
+            <a href="" class="text-slate-400 hover:text-slate-200">कार्यालयको फोन नं.: ०१-५३५६३१५, ०१-५३६०८५१
+            </a>
+          </li>
+          <li>
+            <a href="" class="text-slate-400 hover:text-slate-200">पोष्ट बक्स नं. : ३३३
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-item flex flex-col col-span-3 gap-4">
+        <h2 class="text-white text-lg font-bold">ईमेलहरु</h2>
+        <div class="contact-items flex flex-col gap-3">
+          <div class="contact-item text-slate-400 hover:text-slate-200 flex items-center gap-2 cursor-pointer">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Location I, Street No. 734</p>
+          </div>
+          <div class="contact-item text-slate-400 hover:text-slate-200 flex items-center gap-2 cursor-pointer">
+            <i class="fa-solid fa-phone"></i>
+            <p>+977 XXX-XXX-XXX</p>
+          </div>
+          <div class="contact-item text-slate-400 hover:text-slate-200 flex items-center gap-2 cursor-pointer">
+            <i class="fa-solid fa-envelope"></i>
+            <p>abc@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto h-px w-full bg-slate-600 mt-1"></div>
+    <div class="container flex justify-between mx-auto pb-10">
+      <p class="text-slate-400">© Social Security Fund 2023</p>
+      <p class="text-slate-400">
+        Developed by:
+        <a href="" class="hover:text-slate-200">Virtual Technology</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- <section class="notice-section  bg-blue-50 pb-24">
       <div
         class="container mx-auto px-4 grid grid-cols-10 gap-8 place-content-center"
       >
@@ -1545,9 +1185,10 @@
       </div>
     </section> -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.25/bundled/lenis.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="./scripts/script.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.25/bundled/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="./scripts/script.js"></script>
+</body>
+
 </html>
